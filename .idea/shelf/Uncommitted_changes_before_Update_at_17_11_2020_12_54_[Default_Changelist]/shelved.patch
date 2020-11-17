@@ -1,0 +1,157 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"Viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <link type=\"text/css\" rel=\"stylesheet\" href=\"css/index.css\">\r\n    <title></title>\r\n  </head>\r\n  <body>\r\n\r\n  </body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index.html	(revision 7f5f7ba3c7395f198eff29a740141b8afda61220)
++++ index.html	(date 1605612130667)
+@@ -3,10 +3,33 @@
+   <head>
+     <meta charset="utf-8">
+     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
++    <link rel="preconnect" href="https://fonts.gstatic.com">
++    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+     <link type="text/css" rel="stylesheet" href="css/index.css">
+-    <title></title>
++    <title>Solar Paint</title>
+   </head>
+   <body>
++    <nav>
++      <div class="nav-logo">Solar Paint</div>
++      <ul class="nav-links">
++        <li><a href="#">Home</a></li>
++        <li><a href="#">Solution</a></li>
++        <li><a href="#">Contact</a></li>
++      </ul>
++      <div class="burger">
++        <div class="line1"></div>
++        <div class="line2"></div>
++        <div class="line3"></div>
++      </div>
++    </nav>
++    <header>
++
++    </header>
++    <main>
+ 
++    </main>
++    <footer>
++
++    </footer>
+   </body>
+ </html>
+Index: css/index.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n\r\n/* Css variables */\r\n\r\n:root {\r\n\r\n}\r\n\r\n/* Styles frontpage */\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- css/index.css	(revision 7f5f7ba3c7395f198eff29a740141b8afda61220)
++++ css/index.css	(date 1605614082471)
+@@ -2,8 +2,102 @@
+ 
+ /* Css variables */
+ 
++body {
++    margin: 0;
++    padding: 0;
++    font-size: 1.6rem;
++    box-sizing: border-box;
++    font-family: 'Poppins', sans-serif;
++}
++
+ :root {
+ 
+ }
+ 
+ /* Styles frontpage */
++
++.bg-img {
++    background-image: url("");
++
++    min-height: 100vh;
++
++    background-position: top;
++    background-repeat: no-repeat;
++    background-size: cover;
++
++
++}
++
++nav {
++    display: flex;
++    height: 7vh;
++    justify-content: space-around;
++    align-items: center;
++    border-style: solid;
++    border-color: darkgrey;
++}
++
++.nav-logo {
++    text-align: center;
++    font-size: 1.6rem;
++    text-transform: uppercase;
++    font-weight: 700;
++    letter-spacing: .1rem;
++}
++
++
++.nav-links {
++    display: flex;
++    justify-content: space-around;
++    width: 30%;
++}
++.nav-links li {
++    list-style: none;
++}
++
++.nav-links a{
++    text-decoration: none;
++    color: black;
++    font-size: 1.2rem;
++    font-weight: 700;
++    letter-spacing: .1rem;
++}
++
++.burger {
++    display: none;
++}
++
++.burger div {
++    width: 25px;
++    height: 2px;
++    background-color: black;
++    margin: 5px;
++}
++
++@media screen and (max-width:1024px) {
++    .nav-links {
++        width: 50%;
++    }
++}
++
++@media screen and (max-width:768px) {
++    body {
++        overflow-x: hidden;
++    }
++
++    .nav-links {
++        position: absolute;
++        left: 0;
++        height: 94vh;
++        top: 7vh;
++        flex-direction: column;
++        align-items: center;
++        width: 100%;
++        transform: translateX(100%);
++    }
++
++
++    .nav-links a {
++        font-size: 2rem;
++    }
++}
+\ No newline at end of file
