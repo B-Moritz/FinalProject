@@ -3,9 +3,9 @@
 /* CSS variables */
 
 :root {
-  --color-orange:
-  --color-2:
-  --color-3
+  --color-orange: #cc5d0c;
+  --color-grey: #E0dee0;
+  --color-3: black;
 }
 
 * {
