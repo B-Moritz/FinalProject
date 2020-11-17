@@ -1,0 +1,27 @@
+
+
+/* CSS variables */
+
+:root {
+  --color-orange:
+  --color-2:
+  --color-3
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/*
+  Styles frontpage
+*/
+
+/* Header section */
+
+.landingSection-image {
+
+}
