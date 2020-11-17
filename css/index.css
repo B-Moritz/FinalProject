@@ -4,8 +4,8 @@
 
 :root {
   --color-orange: #cc5d0c;
-  --color-grey: #E0dee0;
-  --color-3: black;
+  --color-grey: #e5e5e5;
+  --color-3: #003539;
 }
 
 * {
@@ -22,40 +22,66 @@ body {
 /*
   Styles frontpage
 */
-.bg-img {
-  background-image: url("");
 
-  min-height: 100vh;
-
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-
+header {
 }
 
-nav {
-  display: flex;
+.header-content {
+  height: 93vh;
+  top: 7vh;
+  //position: relative;
+}
+
+#header-img {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: 20%;
+  z-index: 0;
+}
+
+.header-text {
+  position: absolute;
+  left: 60%;
+  top: 40%;
+  color: var(--color-orange);
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
   height: 7vh;
-  justify-content: space-around;
+  background-color: var(--color-grey);
+}
+
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  border-style: solid;
-  border-color: darkgrey;
+  border-bottom-style: solid;
+  border-color: var(--color-3);
+  border-width: 2px;
+
 }
 
 .nav-logo {
-  text-align: center;
+  width: 80%;
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .1rem;
+  color: var(--color-3);
 }
 
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
-  width: 30%;
+  justify-content: space-between;
+  width: 450px;
 }
 .nav-links li {
   list-style: none;
@@ -63,10 +89,11 @@ nav {
 
 .nav-links a{
   text-decoration: none;
-  color: black;
+  color: var(--color-3);
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: .1rem;
+  cursor: pointer;
 }
 
 .burger {
@@ -81,9 +108,11 @@ nav {
 }
 
 @media screen and (max-width:1024px) {
-  .nav-links {
-    width: 50%;
+  #header-img {
+    height: 90%;
+    width: auto;
   }
+
 }
 
 @media screen and (max-width:768px) {
@@ -91,21 +120,42 @@ nav {
     overflow-x: hidden;
   }
 
-  .nav-links {
-    position: absolute;
-    left: 0;
-    height: 94vh;
-    top: 7vh;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
+  #header-img {
+    height: 80%;
+    width: auto;
   }
 
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 7vh;
+    margin: 0;
+    height: 93vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    background-color: var(--color-grey);
+  }
+
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
 
   .nav-links a {
     font-size: 2rem;
+    margin-bottom: 10vh;
   }
+
+}
+
+/* Script classes */
+.nav-active {
+  transform: translateX(0%);
 }
 
 /* Header section */
