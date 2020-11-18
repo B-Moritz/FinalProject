@@ -259,6 +259,9 @@ main {
   font-size: 1.4rem;
   line-height: 2rem;
 }
+.col-text h2 {
+  color: var(--color-orange);
+}
 .content-center {
   justify-content: center;
 }
