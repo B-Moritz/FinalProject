@@ -76,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605715270251</updated>
       <workItem from="1605715277324" duration="77000" />
-      <workItem from="1605715355144" duration="8114000" />
+      <workItem from="1605715355144" duration="8743000" />
     </task>
     <task id="LOCAL−00003" summary="initial design">
       <created>1605716308424</created>
@@ -90,7 +90,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1605722925179</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Design og java">
+      <created>1605723565701</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1605723565701</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,10 +130,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="598" y="286" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605614271559" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605722933656">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605723576632">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605722933656" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605723576632" />
     <state x="325" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605716932877">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

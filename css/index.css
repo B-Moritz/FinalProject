@@ -75,6 +75,9 @@ h2 {
   width: 100vw;
   height: 10vh;
   background-color: var(--color-orange);
+  border-bottom-style: solid;
+  border-color: white;
+  border-width: 2px;
   z-index: 3;
 }
 
@@ -82,13 +85,10 @@ h2 {
   width: 80%;
   margin: 0 auto;
   height: 100%;
-  padding-top: 2vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom-style: solid;
-  border-color: white;
-  border-width: 2px;
+  padding-top: 2vh;
 
 }
 
@@ -255,6 +255,10 @@ main {
   width: 50vw;
   height: auto;
 }
+
+.col-text h2{
+  color: var(--color-orange);
+}
 .col-text p {
   font-size: 1.4rem;
   line-height: 2rem;
@@ -269,8 +273,7 @@ main {
 }
 
 .img-container-storage {
-  height: 70vh;
-  overflow: hidden;
+  height: 80vh;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -287,6 +290,7 @@ main {
 
 .read-more-button {
   color: white;
+  font-size: 1.4rem;
   background-color: var(--color-orange);
   padding: 0.5rem;
   border-radius: 5px 5px 5px 5px;
@@ -298,6 +302,7 @@ main {
   border-style: solid;
   border-color: black;
   border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
 }
 
 .background-black {
