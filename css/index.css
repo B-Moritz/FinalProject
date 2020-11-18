@@ -265,7 +265,7 @@ main {
 
 .img-container-storage {
   height: 70vh;
-  overflow: hidden;
+  overflow-x: hidden;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
