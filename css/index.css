@@ -38,6 +38,7 @@ header {
 .header-box {
   display: flex;
   align-items: center;
+
 }
 
 .header-img-container {
@@ -45,6 +46,7 @@ header {
   display: flex;
   justify-content: center;
   padding-right: 50px;
+
 }
 
 
@@ -60,6 +62,7 @@ header {
   text-align: left;
   align-items: center;
   color: white;
+
 }
 
 h2 {
@@ -155,9 +158,11 @@ h2 {
   }
   .header-img-container {
     padding: 0;
+    width: 70%;
   }
   .header-text {
     padding-left: 5%;
+    width: 70%;
   }
 
 
