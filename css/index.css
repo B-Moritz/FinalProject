@@ -363,17 +363,16 @@ main {
 .read-more-button {
   color: black;
   font-size: 1.4rem;
-  background-color: var(--color-orange);
   padding: 0.5rem;
-  border-radius: 5px 5px 5px 5px;
-  border-color: white;
-  transition: 0.2s ease;
-}
-.read-more-button:hover {
-  background-color: white;
   border-style: solid;
   border-color: black;
   border-radius: 5px 5px 5px 5px;
+  transition: 0.2s ease;
+}
+.read-more-button:hover {
+  background-color: var(--color-orange);
+  border-radius: 5px 5px 5px 5px;
+  border-color: white;
   cursor: pointer;
 }
 
