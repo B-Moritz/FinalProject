@@ -117,6 +117,23 @@ h2 {
   cursor: pointer;
 }
 
+.menu {
+  width: 100px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  padding-right: 5px;
+  padding-top: 2px;
+}
+
+
 .burger {
   display: none;
 }
@@ -181,6 +198,10 @@ h2 {
     background-color: var(--color-orange);
   }
 
+  .menu {
+    display: flex;
+    cursor: pointer;
+  }
 
   .burger {
     display: block;
@@ -205,6 +226,9 @@ h2 {
   }
   h2 {
     font-size: 2rem;
+  }
+  .nav-logo {
+    font-size: 1.5rem;
   }
 }
 
