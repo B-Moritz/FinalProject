@@ -3,7 +3,8 @@
 /* CSS variables */
 
 :root {
-  --color-orange: #ff6c00;
+  --color-orange: #F56700;
+ /*#ff6c00;*/
   --color-grey: #e5e5e5;
   --color-3: #003539;
 }
@@ -43,6 +44,11 @@ header {
 
 .header-img-container {
   width: 50%;
+<<<<<<< HEAD
+  // display: flex;
+  justify-content: center;
+=======
+>>>>>>> 43c270086f4dde57f82c2cd337180f24f401d7d8
   padding-right: 50px;
 
 }
@@ -306,7 +312,7 @@ main {
 }
 
 .read-more-button {
-  color: white;
+  color: black;
   font-size: 1.4rem;
   background-color: var(--color-orange);
   padding: 0.5rem;
@@ -316,7 +322,6 @@ main {
 }
 .read-more-button:hover {
   background-color: white;
-  color: black;
   border-style: solid;
   border-color: black;
   border-radius: 5px 5px 5px 5px;
