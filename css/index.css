@@ -262,9 +262,6 @@ main {
   font-size: 1.4rem;
   line-height: 2rem;
 }
-.content-center {
-  justify-content: center;
-}
 .col-icon {
   width: 30vw;
   display: flex;
