@@ -43,7 +43,7 @@ header {
 
 .header-img-container {
   width: 50%;
-  display: flex;
+  // display: flex;
   justify-content: center;
   padding-right: 50px;
 
