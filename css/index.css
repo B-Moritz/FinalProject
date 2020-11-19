@@ -44,11 +44,6 @@ header {
 
 .header-img-container {
   width: 50%;
-<<<<<<< HEAD
-  // display: flex;
-  justify-content: center;
-=======
->>>>>>> 43c270086f4dde57f82c2cd337180f24f401d7d8
   padding-right: 50px;
 
 }
@@ -123,6 +118,23 @@ h2 {
   cursor: pointer;
 }
 
+.menu {
+  width: 100px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  padding-right: 5px;
+  padding-top: 2px;
+}
+
+
 .burger {
   display: none;
 }
@@ -187,6 +199,10 @@ h2 {
     background-color: var(--color-orange);
   }
 
+  .menu {
+    display: flex;
+    cursor: pointer;
+  }
 
   .burger {
     display: block;
@@ -211,6 +227,9 @@ h2 {
   }
   h2 {
     font-size: 2rem;
+  }
+  .nav-logo {
+    font-size: 1.5rem;
   }
 }
 
@@ -290,17 +309,16 @@ main {
 .read-more-button {
   color: black;
   font-size: 1.4rem;
-  background-color: var(--color-orange);
   padding: 0.5rem;
-  border-radius: 5px 5px 5px 5px;
-  border-color: white;
-  transition: 0.2s ease;
-}
-.read-more-button:hover {
-  background-color: white;
   border-style: solid;
   border-color: black;
   border-radius: 5px 5px 5px 5px;
+  transition: 0.2s ease;
+}
+.read-more-button:hover {
+  background-color: var(--color-orange);
+  border-radius: 5px 5px 5px 5px;
+  border-color: white;
   cursor: pointer;
 }
 
