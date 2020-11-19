@@ -5,7 +5,7 @@
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link type="text/css" rel="stylesheet" href="css/index.css">
-    <title></title>
+    <title>Solar Paint</title>
     <noscript>
       <style>
         /* Styles for no java script */
@@ -30,6 +30,7 @@
             border-bottom-style: solid;
             border-color: white;
             border-width: 2px;
+            width: 100vw;
           }
           .nav-links{
             position: relative;
@@ -62,8 +63,8 @@
           <div class="nav-logo">Solar Paint</div>
           <ul class="nav-links">
             <li><a class="hover-effect" href="index.html">Home</a></li>
-            <li><a class="hover-effect" href="#">Solution</a></li>
-            <li><a class="hover-effect" href="#">Contact</a></li>
+            <li><a class="hover-effect" href="solution.html">Solution</a></li>
+            <li><a class="hover-effect" href="contact.html">Contact</a></li>
           </ul>
           <div class="menu no-js">
             <div class="menu-text">
@@ -92,11 +93,14 @@
             </h2>
           </div>
         </div>
+        <div class="arrow-container no-js">
+          <a href="#content"><img id="arrow" src="img/arrow.png" alt="arrow"></a>
+        </div>
 
       </div>
 
     </header>
-    <main>
+    <main id="content">
 
           <div id="aboutTheProblem" class="row background-white">
             <div class="col-text">
@@ -152,7 +156,10 @@
           </div>
         </main>
 
-    <script src="app.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="app.js" type="text/javascript"></script>
 
 
     <!--

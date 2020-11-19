@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <title>Solution</title>
+    <noscript>
+        <style>
+            /* Styles for no java script */
+            .no-js {
+                display: none;
+            }
+            @media screen and (max-width: 768px){
+                .nav-container {
+                    position: relative;
+                    top: 0;
+                    width: 100vw;
+                    height: auto;
+                    background-color: var(--color-orange);
+                    z-index: 3;
+                    border-bottom-style: none;
+                }
+                .navbar {
+                    flex-direction: column;
+                }
+                .nav-logo{
+                    text-align: center;
+                    border-bottom-style: solid;
+                    border-color: white;
+                    border-width: 2px;
+                    width: 100vw;
+                }
+                .nav-links{
+                    position: relative;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    text-align: center;
+                    align-items: center;
+                    padding: 0;
+                    top: 0;
+                    width: 100vw;
+                    height: 30vh;
+                    transform: translateX(0%);
+
+                }
+                .nav-links li {
+                    opacity: 1;
+                }
+                .header-content {
+                    top: 0;
+                }
+            }
+        </style>
+    </noscript>
+</head>
+<body>
+    <header>
+        <!-- Navigationbar -->
+        <div class="nav-container">
+            <div class="navbar">
+                <div class="nav-logo">Solar Paint</div>
+                <ul class="nav-links">
+                    <li><a class="hover-effect" href="index.html">Home</a></li>
+                    <li><a class="hover-effect" href="solution.html">Solution</a></li>
+                    <li><a class="hover-effect" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu no-js">
+                    <div class="menu-text">
+                        <p>menu </p>
+                    </div>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <script src="app.js"></script>
+</body>
+</html>
