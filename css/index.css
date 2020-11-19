@@ -253,16 +253,12 @@ main {
   width: 50vw;
   height: auto;
 }
-
 .col-text h2{
   color: var(--color-orange);
 }
 .col-text p {
   font-size: 1.4rem;
   line-height: 2rem;
-}
-.content-center {
-  justify-content: center;
 }
 .col-icon {
   width: 30vw;
