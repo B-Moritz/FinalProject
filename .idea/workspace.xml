@@ -75,7 +75,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605715270251</updated>
       <workItem from="1605715277324" duration="77000" />
-      <workItem from="1605715355144" duration="9368000" />
+      <workItem from="1605715355144" duration="10229000" />
+      <workItem from="1605783985573" duration="311000" />
     </task>
     <task id="LOCAL−00003" summary="initial design">
       <created>1605716308424</created>
@@ -101,7 +102,19 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1605724407709</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="Design og java">
+      <created>1605724954851</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1605724954851</updated>
+    </task>
+    <task id="LOCAL−00008" summary="skalering av bildet">
+      <created>1605784277559</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1605784277559</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +137,8 @@
     <MESSAGE value="Header + script" />
     <MESSAGE value="initial design" />
     <MESSAGE value="Design og java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Design og java" />
+    <MESSAGE value="skalering av bildet" />
+    <option name="LAST_COMMIT_MESSAGE" value="skalering av bildet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605715352352">
@@ -135,10 +149,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="598" y="286" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605724428162" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605724450884">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605724957500">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605724450884" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605724957500" />
     <state x="325" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605716932877">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
