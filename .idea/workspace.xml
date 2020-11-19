@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef31c261-83d4-4ae2-b3d9-122c8d5e38ae" name="Default Changelist" comment="Design og java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +76,7 @@
       <updated>1605715270251</updated>
       <workItem from="1605715277324" duration="77000" />
       <workItem from="1605715355144" duration="10229000" />
+      <workItem from="1605783985573" duration="311000" />
     </task>
     <task id="LOCAL−00003" summary="initial design">
       <created>1605716308424</created>
@@ -108,7 +108,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1605724954851</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="skalering av bildet">
+      <created>1605784277559</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1605784277559</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +137,8 @@
     <MESSAGE value="Header + script" />
     <MESSAGE value="initial design" />
     <MESSAGE value="Design og java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Design og java" />
+    <MESSAGE value="skalering av bildet" />
+    <option name="LAST_COMMIT_MESSAGE" value="skalering av bildet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605715352352">

@@ -44,6 +44,11 @@ header {
 
 .header-img-container {
   width: 50%;
+<<<<<<< HEAD
+  // display: flex;
+  justify-content: center;
+=======
+>>>>>>> 43c270086f4dde57f82c2cd337180f24f401d7d8
   padding-right: 50px;
 
 }
@@ -289,6 +294,7 @@ main {
   padding: 0.5rem;
   border-radius: 5px 5px 5px 5px;
   border-color: white;
+  transition: 0.2s ease;
 }
 .read-more-button:hover {
   background-color: white;
