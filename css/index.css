@@ -33,12 +33,15 @@ header {
   top: 10vh;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: var(--color-orange);
 }
 
 .header-box {
   display: flex;
+  height: auto;
   align-items: center;
 
 
@@ -71,6 +74,25 @@ header {
 
 h2 {
   font-size: 3rem;
+}
+
+.arrow-container{
+  position: absolute;
+  bottom: 2%;
+  transition: transform 0.2s ease;
+}
+
+#arrow {
+  height: 75px;
+  width: auto;
+  transition: transform 0.3s;
+}
+
+#arrow:hover{
+  height: 85px;
+  width: auto;
+  -webkit-transform: scale(1.15);
+  cursor: pointer;
 }
 
 .nav-container {
@@ -222,6 +244,7 @@ a:before, a:after, a > span:before, a > span:after {
 
   .nav-links {
     position: absolute;
+    transform: translateX(100%);
     right: 0;
     top: 10vh;
     margin: 0;
@@ -232,9 +255,8 @@ a:before, a:after, a > span:before, a > span:after {
     text-align: center;
     align-items: center;
     width: 100vw;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
     background-color: var(--color-orange);
+    transition: transform 0.5s ease-in;
   }
 
   .menu {
@@ -249,19 +271,6 @@ a:before, a:after, a > span:before, a > span:after {
 
   .nav-links a {
     font-size: 1.5rem;
-    margin-bottom: 10vh;
-    padding: 1.5rem 3.5rem;
-    border-radius: .3rem;
-    transition: 0.3s ease;
-  }
-
-  .nav-links a:hover {
-    background-color: #ffebcf;
-    color: black;
-  }
-  .nav-links a:active {
-    background-color: #ffebcf;
-    color: black;
   }
 
 
@@ -373,6 +382,7 @@ main {
   background-color: var(--color-orange);
   border-radius: 5px 5px 5px 5px;
   border-color: white;
+  color: white;
   cursor: pointer;
 }
 
