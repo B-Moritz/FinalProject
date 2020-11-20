@@ -322,12 +322,6 @@ a:before, a:after, a > span:before, a > span:after {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Header section */
-
-.landingSection-image {
-
-}
-
 /* Main section (frontpage) */
 main {
   margin-top: 4rem;
@@ -341,7 +335,7 @@ main {
   width: 50vw;
   height: auto;
 }
-.col-text h2{
+.col-text h2 {
   color: var(--color-orange);
 }
 .col-text p {
@@ -390,7 +384,6 @@ main {
   background-color: black;
 }
 
-.background-black .col-text h2,
 .background-black .col-text p {
   color: white;
 }
@@ -416,5 +409,409 @@ main {
   }
   .img-container-storage img {
     width: 100vw;
+  }
+}
+
+
+/* Style for solution page -------------------------------------- */
+
+/* Layer figure */
+.layerfigure-container {
+  height: auto;
+  overflow: auto;
+  margin: 1rem 10vw;
+
+  /* Colors */
+  --light: #ff6c00;
+  --middle: #6c2e00;
+  --dark: #575757;
+
+  --layer-margin-top: 0rem;
+  --layer-margin-left: 2rem;
+  --pointer-height: 5px;
+  --layer-text-padding: 0.2rem 1rem;
+
+  --image-margin-top: calc(var(--layer-margin-top) + 12rem);
+
+  --text-container-margin-right: 10vw;
+}
+.layer-text h2 {
+  font-size: 1.5rem;
+}
+.layer-text li {
+  font-size: 1rem;
+}
+.layer-text ul {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.mobile-image {
+  display: none;
+}
+.layerfigure-image-container {
+  float: right;
+  position: relative;
+}
+.layerfigure-image-container picture img {
+  margin: var(--image-margin-top) 0;
+}
+#layer-image {
+  width: 25rem;
+}
+#layerfiguretxt {
+  width: 23rem;
+  margin-right: var(--text-container-margin-right);
+}
+.layerfigure-container > div {
+  float: left;
+}
+.layerfigure-container > div input {
+  position: absolute;
+  margin: 0;
+  height: 0;
+  width: 0;
+}
+.layer-label:hover > .layer-text{
+  background-color: var(--light);
+  color: black;
+  opacity: 1;
+  cursor: pointer;
+}
+.layer-label > .layer-text {
+  padding: var(--layer-text-padding);
+  opacity: 0.3;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+.layer-text li {
+  padding: 0.5rem 0;
+}
+
+input[id*="layer"]:checked + label > .layer-text {
+  opacity: 1;
+}
+
+#layer1:checked + label > .layer-text,
+#layer2:checked + label > .layer-text,
+#layer3:checked + label > .layer-text {
+  background-color: black;
+  color: white;
+}
+.layer-label {
+  display: block;
+  position: relative;
+  margin: var(--layer-margin-top) var(--layer-margin-left);
+}
+#layer1:focus + label,
+#layer2:focus + label,
+#layer3:focus + label {
+  border-style: solid;
+  border-color: red;
+  border-width: 0.2rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+/* Pointers */
+
+[class*="pointer-layer"] {
+  overflow: auto;
+  height: var(--pointer-height);
+  position: relative;
+  display: inline-block;
+  left: 20.5rem;
+  opacity: 0;
+  z-index: -1;
+}
+.pointer-layer1 {
+  background-color: var(--light);
+  width: calc(var(--text-container-margin-right) + 13rem);
+  top: -9rem;
+  transform: rotate(30deg);
+  transform-origin: top left;
+}
+.pointer-layer2 {
+  background-color: var(--middle);
+  width: calc(var(--text-container-margin-right) + 7rem);
+  top: -9.5rem;
+}
+.pointer-layer3 {
+  background-color: var(--dark);
+  width: calc(var(--text-container-margin-right) + 11rem);
+  top: -16rem;
+  transform: rotate(-20deg);
+  transform-origin: top left;
+}
+#layer1:checked ~ .pointer-layer1,
+#layer1:checked ~ .pointer-layer1-helper,
+#layer2:checked ~ .pointer-layer2,
+#layer3:checked ~ .pointer-layer3,
+#layer3:checked ~ .pointer-layer3-helper {
+  opacity: 1;
+}
+
+#HiddenLayer1,
+#HiddenLayer2,
+#HiddenLayer3 {
+  display: none;
+  position: absolute;
+  top: 27rem;
+  margin-left: var(--layer-margin-left);
+  padding: var(--layer-text-padding);
+  width: 60vw;
+}
+
+[id*="image-cover-"] {
+  opacity: 0;
+  position: absolute;
+  width: 25rem;
+  overflow: auto;
+  z-index: 100;
+  display: inline-block;
+}
+[id*="image-cover-"]:hover {
+  cursor: pointer;
+}
+#image-cover-1 {
+  top: var(--image-margin-top);
+  height: 9rem;
+  border-radius: 10px 10px 0 0;
+}
+#image-cover-2 {
+  top: calc(var(--image-margin-top) + 9rem);
+  height: 7rem;
+}
+#image-cover-3 {
+  top: calc(var(--image-margin-top) + 9rem + 7rem);
+  height: 8rem;
+  border-radius: 0 0 10px 10px;
+}
+.pointer-layer1-helper {
+  display: none;
+  background-color: var(--light);
+}
+.pointer-layer3-helper {
+  display: none;
+  background-color: var(--dark);
+}
+
+@media (max-width: 1125px) {
+  .layer-text p,
+  .layer-text ul {
+    display: none;
+  }
+  .layerfigure-container {
+    --text-container-margin-right: 10vw;
+    --image-margin-top: calc(var(--layer-margin-top) + 3rem);
+    --left-variable: 10vw;
+  }
+  #layerfiguretxt {
+    width: 17rem;
+    position: absolute;
+    left: 10vw;
+  }
+  .layerfigure-image-container {
+    margin-left: calc(var(--text-container-margin-right) + 10rem);
+  }
+  [class*="pointer-layer"] {
+    position: absolute;
+  }
+  .pointer-layer1 {
+    width: calc(var(--text-container-margin-right) + 4rem);
+    top: 3rem;
+    transform: rotate(30deg);
+    transform-origin: top left;
+    left: calc(var(--left-variable) + 8rem);
+  }
+  .pointer-layer2 {
+    width: calc(var(--text-container-margin-right) + 3rem);
+    top: 12.2rem;
+    transform: rotate(25deg);
+    left: calc(var(--left-variable) + 7.5rem);
+  }
+  .pointer-layer3 {
+    width: calc(var(--text-container-margin-right) + 2rem);
+    top: 17rem;
+    transform: rotate(20deg);
+    transform-origin: top left;
+    left: calc(var(--left-variable) + 8rem);
+  }
+
+  #layer1:checked ~ #HiddenLayer1 {
+    display: inline-block;
+  }
+  #layer2:checked ~ #HiddenLayer2 {
+    display: inline-block;
+  }
+  #layer3:checked ~ #HiddenLayer3 {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 850px) {
+  .layerfigure-container {
+    --layer-margin-top: 1rem;
+    --layer-margin-left: 2rem;
+
+    --text-container-margin-right: 2vw;
+    --image-margin-top: calc(var(--layer-margin-top) - 4rem);
+
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+  }
+  .layerfigure-image-container {
+    margin-left: 0;
+    display: flex;
+  }
+  .pointer-layer1 {
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    top: 0.7rem;
+    left: 2rem;
+    width: 15rem;
+  }
+  .pointer-layer1-helper {
+    left: 1.68rem;
+    border-radius: 5px 0 0 5px;
+    width: 12rem;
+    transform: rotate(-20deg);
+    transform-origin: top left;
+    top: -14.1rem;
+    display: inline-block;
+  }
+  .pointer-layer2 {
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    top: 0.7rem;
+    left: 16rem;
+    width: 12rem;
+    z-index: 1;
+  }
+  .pointer-layer3 {
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    top: 0.7rem;
+    left: calc(24rem + 6vw);
+    width: 3rem;
+    z-index: 1;
+    border-radius: 0 5px 5px 0;
+  }
+  .pointer-layer3-helper {
+    left: calc(23.85rem + 6vw);
+    border-radius: 5px 0 0 5px;
+    width: 10rem;
+    transform: rotate(-145deg);
+    transform-origin: top left;
+    top: -1.7rem;
+    display: inline-block;
+  }
+  #layer-image-mobile {
+    width: 23rem;
+  }
+  #layerfiguretxt {
+    width: 100%;
+    position: relative;
+    float: right;
+    display: block;
+    left: 0vw;
+  }
+  .layer-label {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 25vw;
+    margin: var(--layer-margin-top) 0;
+    font-size: 2vw;
+  }
+  .mobile-remove {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+    align-self: center;
+  }
+
+  #HiddenLayer1,
+  #HiddenLayer2,
+  #HiddenLayer3 {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    padding: var(--layer-text-padding);
+    width: 60vw;
+  }
+  #HiddenLayer1 h2,
+  #HiddenLayer2 h2,
+  #HiddenLayer3 h2 {
+    display: none;
+  }
+
+  #image-cover-1 {
+    top: var(--image-margin-top);
+    height: 12rem;
+  }
+  #image-cover-2 {
+    top: calc(var(--image-margin-top) + 12rem);
+    height: 7rem;
+  }
+  #image-cover-3 {
+    top: calc(var(--image-margin-top) + 12rem + 7rem);
+    height: 8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .layerfigure-container {
+    height: calc(50rem - 10vw);
+    overflow: hidden;
+  }
+  .layer-label {
+    width: 99%;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  #HiddenLayer1,
+  #HiddenLayer2,
+  #HiddenLayer3 {
+    top: calc(14rem - 6vw);
+  }
+  #layer-image-mobile {
+    width: 19rem;
+  }
+  #image-cover-1 {
+    top: var(--image-margin-top);
+    height: 10em;
+  }
+  #image-cover-2 {
+    top: calc(var(--image-margin-top) + 10rem);
+    height: 5rem;
+  }
+  #image-cover-3 {
+    top: calc(var(--image-margin-top) + 10rem + 5rem);
+    height: 6.5rem;
+  }
+  .pointer-layer1 {
+    z-index: 1;
+    width: 14.1rem;
+    top: -0.2rem;
+  }
+  .pointer-layer1-helper {
+    width: 9rem;
+  }
+  .pointer-layer2 {
+    top: 3.7rem;
+    left: 15rem;
+    width: 14rem;
+  }
+  .pointer-layer3 {
+    transform-origin: bottom left;
+    top: 7.2rem;
+    left: calc(15rem + 6vw);
+    width: 11rem;
+    border-radius: 0 5px 5px 0;
+  }
+  .pointer-layer3-helper {
+    display: none;
   }
 }
