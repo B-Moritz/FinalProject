@@ -19,14 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef31c261-83d4-4ae2-b3d9-122c8d5e38ae" name="Default Changelist" comment="menutext til burger">
-      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solution.html" afterDir="false" />
+    <list default="true" id="ef31c261-83d4-4ae2-b3d9-122c8d5e38ae" name="Default Changelist" comment="Flere linker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +85,8 @@
       <workItem from="1605715277324" duration="77000" />
       <workItem from="1605715355144" duration="10229000" />
       <workItem from="1605783985573" duration="311000" />
+      <workItem from="1605797989291" duration="228000" />
+      <workItem from="1605870059826" duration="1479000" />
     </task>
     <task id="LOCAL−00003" summary="initial design">
       <created>1605716308424</created>
@@ -139,7 +136,31 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1605792703351</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="java++">
+      <created>1605798005923</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1605798005923</updated>
+    </task>
+    <task id="LOCAL−00012" summary="java++">
+      <created>1605798207867</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1605798207867</updated>
+    </task>
+    <task id="LOCAL−00013" summary="scrolleffect">
+      <created>1605870532529</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1605870532529</updated>
+    </task>
+    <task id="LOCAL−00014" summary="Flere linker">
+      <created>1605870910956</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1605870910956</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +185,10 @@
     <MESSAGE value="Design og java" />
     <MESSAGE value="skalering av bildet" />
     <MESSAGE value="menutext til burger" />
-    <option name="LAST_COMMIT_MESSAGE" value="menutext til burger" />
+    <MESSAGE value="java++" />
+    <MESSAGE value="scrolleffect" />
+    <MESSAGE value="Flere linker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Flere linker" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605715352352">
@@ -175,13 +199,13 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="598" y="286" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605724428162" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605792713272">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605870914438">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605792713272" />
-    <state x="325" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605792705770">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605870914438" />
+    <state x="325" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605870535776">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="325" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605792705770" />
+    <state x="325" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605870535776" />
   </component>
 </project>
