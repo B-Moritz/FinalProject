@@ -477,6 +477,7 @@ main {
   margin: 0;
   height: 0;
   width: 0;
+  opacity: 0;
 }
 .layer-label:hover > .layer-text{
   background-color: var(--light);
