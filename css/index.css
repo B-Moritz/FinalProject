@@ -341,7 +341,7 @@ main {
   width: 50vw;
   height: auto;
 }
-.col-text h2{
+.col-text h2 {
   color: var(--color-orange);
 }
 .col-text p {
@@ -390,7 +390,6 @@ main {
   background-color: black;
 }
 
-.background-black .col-text h2,
 .background-black .col-text p {
   color: white;
 }
