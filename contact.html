@@ -56,33 +56,82 @@
     </noscript>
 </head>
 <body>
-    <header>
-        <!-- Navigationbar -->
-        <div class="nav-container">
-            <div class="navbar">
-                <div class="nav-logo">Solar Paint</div>
-                <ul class="nav-links">
-                    <li><a class="hover-effect" href="index.html">Home</a></li>
-                    <li><a class="hover-effect" href="solution.html">Solution</a></li>
-                    <li><a class="hover-effect" href="about.html">About</a></li>
-                    <li><a class="hover-effect" href="contact.html">Contact</a></li>
-                </ul>
-                <div class="menu no-js">
-                    <div class="menu-text">
-                        <p>menu </p>
-                    </div>
-                    <div class="burger">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
+<header>
+    <!-- Navigationbar -->
+    <div class="nav-container">
+        <div class="navbar">
+            <div class="nav-logo">Solar Paint</div>
+            <ul class="nav-links">
+                <li><a class="hover-effect" href="index.html">Home</a></li>
+                <li><a class="hover-effect" href="solution.html">Solution</a></li>
+                <li><a class="hover-effect" href="about.html">About</a></li>
+                <li><a class="hover-effect" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu no-js">
+                <div class="menu-text">
+                    <p>menu </p>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Content in header -->
+    <div class="header-content">
+        <div class="header-box">
+            <div class="header-img-container">
+                <img id="header-img" src="img/001-painting.png">
+            </div>
+            <div class="header-text">
+                <h2>
+                    Want to<br>
+                    get in touch?
+                </h2>
+            </div>
+        </div>
+        <div class="arrow-container no-js">
+            <a href="#content"><img id="arrow" src="img/arrow.png" alt="arrow"></a>
+        </div>
+
+    </div>
 
 
-    </header>
+</header>
+<main>
+    <div class="contact-section row">
+        <div class="contact-title">
+            <h2>Contact us</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-text-container" id="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium mi a aliquet facilisis.
+                    Vivamus sit amet nulla massa. Sed lacinia sapien id tortor scelerisque, vitae mattis lorem blandit.
+                    Praesent vehicula venenatis metus pulvinar condimentum. Vivamus at enim nec magna molestie viverra.
+                    Nunc ex purus, pellentesque eu posuere quis, ultrices a nulla. Aliquam erat volutpat.
 
-    <script src="app.js"></script>
+                    Nulla feugiat, tellus egestas faucibus aliquam, turpis ante luctus nisi, in facilisis ante lorem nec lorem.
+                    Duis ac metus in lorem pharetra cursus. Quisque lectus.</p>
+
+            </div>
+            <div class="form-container">
+                <form>
+                    <label for="email">E-mail adress</label>
+                    <input type="text" id="email" name="email" placeholder="Your email...">
+                    <label for="subject">Your personal message</label>
+                    <textarea name="subject" id="subject" placeholder="Your message..." style="height:200px"></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="app.js"></script>
 </body>
 </html>
