@@ -387,6 +387,11 @@ main {
 .background-black .col-text p {
   color: white;
 }
+.background-black .col-text,
+.background-black .col-icon {
+  position: relative;
+  top: -12rem;
+}
 
 @media (max-width: 700px) {
   .row {
@@ -411,6 +416,7 @@ main {
     width: 100vw;
   }
 }
+/* End styles for startpage ------------------------------------- */
 
 
 /* Style for solution page -------------------------------------- */
@@ -537,7 +543,7 @@ input[id*="layer"]:checked + label > .layer-text {
 .pointer-layer3 {
   background-color: var(--dark);
   width: calc(var(--text-container-margin-right) + 11rem);
-  top: -16rem;
+  top: -14rem;
   transform: rotate(-20deg);
   transform-origin: top left;
 }
@@ -603,6 +609,8 @@ input[id*="layer"]:checked + label > .layer-text {
     --text-container-margin-right: 10vw;
     --image-margin-top: calc(var(--layer-margin-top) + 3rem);
     --left-variable: 10vw;
+
+    margin-bottom: 9rem;
   }
   #layerfiguretxt {
     width: 17rem;
@@ -658,6 +666,11 @@ input[id*="layer"]:checked + label > .layer-text {
     display: flex;
     flex-direction: column;
     height: 50rem;
+
+    margin: 0rem 5vw;
+  }
+  .layer-label > .layer-text {
+    border-radius: 0 0 0 0;
   }
   .layerfigure-image-container {
     margin-left: 0;
@@ -667,11 +680,11 @@ input[id*="layer"]:checked + label > .layer-text {
     transform: rotate(-90deg);
     transform-origin: bottom left;
     top: 0.7rem;
-    left: 2rem;
+    left: 5rem;
     width: 15rem;
   }
   .pointer-layer1-helper {
-    left: 1.68rem;
+    left: 4.68rem;
     border-radius: 5px 0 0 5px;
     width: 12rem;
     transform: rotate(-20deg);
@@ -683,7 +696,7 @@ input[id*="layer"]:checked + label > .layer-text {
     transform: rotate(-90deg);
     transform-origin: bottom left;
     top: 0.7rem;
-    left: 16rem;
+    left: 17rem;
     width: 12rem;
     z-index: 1;
   }
@@ -691,13 +704,13 @@ input[id*="layer"]:checked + label > .layer-text {
     transform: rotate(-90deg);
     transform-origin: bottom left;
     top: 0.7rem;
-    left: calc(24rem + 6vw);
+    left: calc(28rem + 6vw);
     width: 3rem;
     z-index: 1;
     border-radius: 0 5px 5px 0;
   }
   .pointer-layer3-helper {
-    left: calc(23.85rem + 6vw);
+    left: calc(27.85rem + 6vw);
     border-radius: 5px 0 0 5px;
     width: 10rem;
     transform: rotate(-145deg);
@@ -720,7 +733,7 @@ input[id*="layer"]:checked + label > .layer-text {
     top: 0;
     left: 0;
     float: left;
-    width: 25vw;
+    width: 29vw;
     margin: var(--layer-margin-top) 0;
     font-size: 2vw;
   }
@@ -759,11 +772,20 @@ input[id*="layer"]:checked + label > .layer-text {
     top: calc(var(--image-margin-top) + 12rem + 7rem);
     height: 8rem;
   }
+
+  #layer1:focus + label,
+  #layer2:focus + label,
+  #layer3:focus + label {
+    border-style: solid;
+    border-color: red;
+    border-width: 0.2rem;
+    border-radius: 0 0 0 0;
+  }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 640px) {
   .layerfigure-container {
-    height: calc(50rem - 10vw);
+    height: calc(55rem - 10vw);
     overflow: hidden;
   }
   .layer-label {
@@ -774,7 +796,7 @@ input[id*="layer"]:checked + label > .layer-text {
   #HiddenLayer1,
   #HiddenLayer2,
   #HiddenLayer3 {
-    top: calc(14rem - 6vw);
+    top: calc(16rem - 6vw);
   }
   #layer-image-mobile {
     width: 19rem;
@@ -800,18 +822,28 @@ input[id*="layer"]:checked + label > .layer-text {
     width: 9rem;
   }
   .pointer-layer2 {
-    top: 3.7rem;
-    left: 15rem;
+    top: 4.5rem;
+    left: 19rem;
     width: 14rem;
   }
   .pointer-layer3 {
     transform-origin: bottom left;
-    top: 7.2rem;
-    left: calc(15rem + 6vw);
-    width: 11rem;
+    top: 9rem;
+    left: calc(18.2rem + 6vw);
+    width: 11.3rem;
     border-radius: 0 5px 5px 0;
   }
   .pointer-layer3-helper {
-    display: none;
+    left: calc(18rem + 6vw);
+  }
+  #HiddenLayer1,
+  #HiddenLayer2,
+  #HiddenLayer3 {
+    width: 80vw;
+    margin: 0;
+  }
+  [id*="HiddenLayer"] li {
+    font-size: 1.4rem;
+
   }
 }
