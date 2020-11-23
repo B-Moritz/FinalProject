@@ -56,6 +56,18 @@
     </noscript>
 </head>
 <body>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Thank you!</h2>
+        </div>
+        <div class="modal-body">
+            <p>Your message was received.</p>
+        </div>
+    </div>
+
+</div>
 <header>
     <!-- Navigationbar -->
     <div class="nav-container">
@@ -107,31 +119,35 @@
             <h2>Contact us</h2>
         </div>
         <div class="contact-container">
-            <div class="contact-text-container" id="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium mi a aliquet facilisis.
-                    Vivamus sit amet nulla massa. Sed lacinia sapien id tortor scelerisque, vitae mattis lorem blandit.
-                    Praesent vehicula venenatis metus pulvinar condimentum. Vivamus at enim nec magna molestie viverra.
-                    Nunc ex purus, pellentesque eu posuere quis, ultrices a nulla. Aliquam erat volutpat.
+            <div class="col-text" id="content">
+                <p>Our company would love to receive feedback in form of support or ideas.
+                    Either you want to financially support the project, or potentially work with us.
+                    We are always looking for partners that can help us grow and develop the best possible product for a better climate.</p><br>
 
-                    Nulla feugiat, tellus egestas faucibus aliquam, turpis ante luctus nisi, in facilisis ante lorem nec lorem.
-                    Duis ac metus in lorem pharetra cursus. Quisque lectus.</p>
+                <p><i>Please type in your e-mail address and a personal message below.</i></p>
+
 
             </div>
             <div class="form-container">
                 <form>
-                    <label for="email">E-mail adress</label>
+                    <label for="email">E-mail address</label>
                     <input type="text" id="email" name="email" placeholder="Your email...">
                     <label for="subject">Your personal message</label>
                     <textarea name="subject" id="subject" placeholder="Your message..." style="height:200px"></textarea><br>
-                    <input type="submit" value="Submit">
                 </form>
+                <button id="myBtn">Submit</button>
             </div>
         </div>
 
     </div>
 
+
 </main>
+<footer>
+
+</footer>
 
 <script src="app.js"></script>
+<script src="modal.js"></script>
 </body>
 </html>
