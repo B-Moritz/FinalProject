@@ -57,6 +57,8 @@
 </head>
 <body>
     <header>
+        <!-- Skip button -->
+        <a class="skip-button" href="#content-solution">Skip to content</a>
         <!-- Navigationbar -->
         <div class="nav-container">
             <div class="navbar">
@@ -83,14 +85,11 @@
 
     </header>
     <!-- Main section -->
-    <main>
+    <main id="content-solution">
       <div class="row">
-        <h1>The solution</h1>
-      </div>
-      <div class="row">
-        <div class="col-text">
-          <h2>Several techniques</h2>
-          <p>
+        <div class="col-text" tabindex="0">
+          <h2 tabindex="0">Several techniques</h2>
+          <p tabindex="0">
             Our technology features several techniques to harvest energy from sunlight.
             One part of the solution consists of a photovoltaic paint.
             This paint consists of an element which converts sunlight to electrical current.
@@ -101,13 +100,18 @@
             This heat is then converted into electrical energy with a thermoelectric paint.
           </p>
         </div>
-        <div class="col-icon">
+        <div class="col-icon combination-icon">
           <img src="img/Combination1.png">
         </div>
       </div>
 
       <div class="layerfigure-row">
-        <div class="layerfigure-container">
+        <p>
+          The solution is implemented by painting three layers of paint on a surface like a roof or a building facade.
+        </p>
+        <p class="expl-normal" tabindex="0"><i>Please navigate the following figure by clicking or with arrow keys</i></p>
+        <p class="expl-touch" tabindex="0"><i>Please navigate the following figure by tapping the layers or text areas</i></p>
+        <figure role="group" class="layerfigure-container">
 
           <!-- mobile Image -->
           <div class="layerfigure-image-container mobile-image">
@@ -120,18 +124,18 @@
           </div>
 
           <div id="layerfiguretxt">
-            <input id="layer1" tabindex="0" type="radio" name="layerFigure" checked="checked">
-            <label for="layer1" class="layerfigure-layer1 layer-label">
-              <div id="layer-text-1" class="layer-text">
-                <h2>Layer 1 - photovoltaic</h2>
+            <input id="layer1" type="radio" name="layerFigure" checked="checked" aria-hidden="true">
+            <label for="layer1" class="layerfigure-layer1 layer-label" aria-hidden="true">
+              <div id="layer-text-1" class="layer-text" role="textbox">
+                <h2 id="Label-Layer1">Layer 1 - photovoltaic</h2>
                 <ul>
                   <li>The first layer makes up the surface of the solution.</li>
                   <li>The layer consists of a photovoltaic paint that generates electrical current from sunlight.</li>
                 </ul>
               </div>
             </label>
-            <div class="pointer-layer1"></div>
-            <div class="pointer-layer1-helper"></div>
+            <div aria-hidden="true" class="pointer-layer1"></div>
+            <div aria-hidden="true" class="pointer-layer1-helper"></div>
             <!-- Hidden box -->
             <div id="HiddenLayer1">
               <h2>Layer 1 - photovoltaic</h2>
@@ -141,17 +145,17 @@
               </ul>
             </div>
 
-            <input id="layer2" tabindex="0" type="radio" name="layerFigure">
-            <label for="layer2" class="layerfigure-layer2 layer-label">
-              <div class="layer-text">
-                <h2>Layer 2 - Thermoelectric</h2>
+            <input id="layer2" type="radio" name="layerFigure" aria-hidden="true">
+            <label for="layer2" class="layerfigure-layer2 layer-label" aria-hidden="true">
+              <div class="layer-text" role="textbox">
+                <h2 id="Label-Layer2">Layer 2 - Thermoelectric</h2>
                 <ul>
                   <li>The second layer is a thermoelectric paint, which converts heat into electrical current.</li>
                   <li>It is thicker than the other layers and conducts electrical current.</li>
                 </ul>
               </div>
             </label>
-            <div class="pointer-layer2"></div>
+            <div aria-hidden="true" class="pointer-layer2"></div>
             <!-- Hidden box -->
             <div id="HiddenLayer2">
               <h2>Layer 2 - Thermoelectric</h2>
@@ -161,18 +165,18 @@
               </ul>
             </div>
 
-            <input id="layer3" tabindex="0" type="radio" name="layerFigure">
-            <label for="layer3" class="layerfigure-layer3 layer-label">
-              <div class="layer-text">
-                <h2>Layer 3 - semiconductor</h2>
+            <input id="layer3" type="radio" name="layerFigure" aria-hidden="true">
+            <label for="layer3" class="layerfigure-layer3 layer-label" aria-hidden="true">
+              <div class="layer-text" role="textbox">
+                <h2 id="Label-Layer3">Layer 3 - semiconductor</h2>
                 <ul>
                   <li>The last layer consists of a material with conducting properties.</li>
                   <li>This element ensures that the electrical energy from the thermoelectric paint is added to a circuit.</li>
                 </ul>
               </div>
             </label>
-            <div class="pointer-layer3"></div>
-            <div class="pointer-layer3-helper"></div>
+            <div aria-hidden="true" class="pointer-layer3"></div>
+            <div aria-hidden="true" class="pointer-layer3-helper"></div>
             <!-- Hidden box -->
             <div id="HiddenLayer3">
               <h2>Layer 3 - semiconductor</h2>
@@ -183,22 +187,22 @@
             </div>
           </div>
 
-          <div class="layerfigure-image-container mobile-remove">
-            <label id="image-cover-1" for="layer1"></label>
-            <label id="image-cover-2" for="layer2"></label>
-            <label id="image-cover-3" for="layer3"></label>
+          <div role="group" aria-label="Image of three stacked layers" class="layerfigure-image-container mobile-remove">
+            <label aria-labelledby="Label-Layer1" id="image-cover-1" aria-describedby="layer-text-1" for="layer1"></label>
+            <label aria-labelledby="Label-Layer1" id="image-cover-2" aria-describedby="layer-text-2" for="layer2"></label>
+            <label aria-labelledby="Label-Layer1" id="image-cover-3" aria-describedby="layer-text-3" for="layer3"></label>
             <picture>
               <source srcset="img/LayerFigureSpacing2.png" media="(max-width: 850px)">
               <img id="layer-image" src="img/LayerFigureSpacing1.png" alt="Three stacked layers">
             </picture>
           </div>
-        </div>
+        </figure>
       </div>
 
       <div class="row">
-        <div class="col-text">
-          <h2>How is the energy harvested?</h2>
-          <p>
+        <div class="col-text" tabindex="0">
+          <h2 tabindex="0">How is the energy harvested?</h2>
+          <p tabindex="0">
             The sunlight is first absorbed by the photovoltaic paint, where 20% of the energy from the sunlight is converted into electrical current in layer 3.
             A large amount of the remaining energy is then turned into heat.
             Following that, this heat is heating up layer 2 consisting of the thermoelectric paint.
@@ -206,7 +210,7 @@
             The electrical energy produced is flowing in a closed circuit due to the conducting abilities of layer 2 and 3 and the two cables that are connected to layer 1 and 3.
           </p>
         </div>
-        <div class="col-icon">
+        <div class="col-icon combination-icon">
         </div>
       </div>
     </main>

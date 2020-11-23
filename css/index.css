@@ -24,6 +24,24 @@ body {
   font-family: 'helvetica', sans-serif;
 }
 
+.skip-button {
+  text-decoration: none;
+  background-color: white;
+  position: absolute;
+  top: -4rem;
+  z-index: 100;
+  padding: 1rem;
+  left: 1rem;
+  transition: transform 0.2s;
+}
+.skip-button:hover {
+  background-color: black;
+  color: white;
+}
+.skip-button:focus {
+  transform: translateY(5rem);
+}
+
 /*
   Styles frontpage
 */
@@ -398,6 +416,12 @@ main {
   position: relative;
   top: -12rem;
 }
+.combination-icon > img {
+  width: 100%;
+}
+.combination-icon {
+  padding: 0;
+}
 
 @media (max-width: 700px) {
   .row {
@@ -431,7 +455,7 @@ main {
 .layerfigure-container {
   height: auto;
   overflow: auto;
-  margin: 1rem 10vw;
+  margin: 2rem 10vw;
 
   /* Colors */
   --light: #f56700;
@@ -485,12 +509,33 @@ main {
   width: 0;
   opacity: 0;
 }
-.layer-label:hover > .layer-text{
-  background-color: var(--light);
-  color: black;
-  opacity: 1;
-  cursor: pointer;
+.layerfigure-row > p {
+  margin: 1rem 10vw;
 }
+.expl-normal {
+  display: none;
+}
+.expl-touch {
+  display: block;
+  font-size: 1.3rem;
+}
+@media (hover: hover) {
+  .layer-label:hover > .layer-text{
+    background-color: var(--light);
+    color: black;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .expl-normal {
+    font-size: 1.3rem;
+    display: block;
+  }
+  .expl-touch {
+    display: none;
+  }
+}
+
+
 .layer-label > .layer-text {
   padding: var(--layer-text-padding);
   opacity: 0.3;
@@ -676,9 +721,6 @@ input[id*="layer"]:checked + label > .layer-text {
 
     margin: 0rem 5vw;
   }
-  .layer-label > .layer-text {
-    border-radius: 0 0 0 0;
-  }
   .layerfigure-image-container {
     margin-left: 0;
     display: flex;
@@ -779,15 +821,6 @@ input[id*="layer"]:checked + label > .layer-text {
     top: calc(var(--image-margin-top) + 12rem + 7rem);
     height: 8rem;
   }
-
-  #layer1:focus + label,
-  #layer2:focus + label,
-  #layer3:focus + label {
-    border-style: solid;
-    border-color: red;
-    border-width: 0.2rem;
-    border-radius: 0 0 0 0;
-  }
 }
 
 @media (max-width: 640px) {
@@ -830,8 +863,8 @@ input[id*="layer"]:checked + label > .layer-text {
   }
   .pointer-layer2 {
     top: 4.5rem;
-    left: 19rem;
-    width: 14rem;
+    left: 18rem;
+    width: 15rem;
   }
   .pointer-layer3 {
     transform-origin: bottom left;
@@ -842,6 +875,7 @@ input[id*="layer"]:checked + label > .layer-text {
   }
   .pointer-layer3-helper {
     left: calc(18rem + 6vw);
+    width: 5rem;
   }
   #HiddenLayer1,
   #HiddenLayer2,
