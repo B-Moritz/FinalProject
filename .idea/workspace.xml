@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef31c261-83d4-4ae2-b3d9-122c8d5e38ae" name="Default Changelist" comment="Flere linker" />
+    <list default="true" id="ef31c261-83d4-4ae2-b3d9-122c8d5e38ae" name="Default Changelist" comment="contact.html" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,25 +186,30 @@
     <MESSAGE value="java++" />
     <MESSAGE value="scrolleffect" />
     <MESSAGE value="Flere linker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Flere linker" />
+    <MESSAGE value="contact.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact.html" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605715352352">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605715352352" />
-    <state x="598" y="286" key="MultipleFileMergeDialog" timestamp="1605724428162">
+    <state x="184" y="87" key="MergeDialog" timestamp="1605883365891">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="598" y="286" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605724428162" />
+    <state x="184" y="87" key="MergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605883365891" />
+    <state x="598" y="286" key="MultipleFileMergeDialog" timestamp="1605883369286">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="598" y="286" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605883369286" />
     <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605870914438">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605870914438" />
-    <state x="325" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605870535776">
+    <state x="325" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605883346391">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="325" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605870535776" />
+    <state x="325" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605883346391" />
     <state x="383" y="202" width="670" height="676" key="search.everywhere.popup" timestamp="1605874712257">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
