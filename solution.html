@@ -107,7 +107,7 @@
 
       <div class="layerfigure-row">
         <div>
-          <h2>A layer structure</h2>
+          <h2 tabindex="0">A layer structure</h2>
           <p>
             The solution is implemented by painting three layers of paint on a surface like a roof or a building facade.
           </p>
@@ -127,16 +127,16 @@
           </div>
 
           <div id="layerfiguretxt">
-            <input id="layer1" type="radio" name="layerFigure" checked="checked" aria-hidden="true">
-            <label for="layer1" tabindex="0" class="layerfigure-layer1 layer-label" aria-hidden="false">
-              <div id="layer-text-1" class="layer-text" role="textbox" aria-hidden="false">
+            <input id="layer1" type="radio" name="layerFigure" checked="checked" aria-labelledby="HiddenLayer1">
+            <label for="layer1" tabindex="0" class="layerfigure-layer1 layer-label" aria-hidden="true">
+              <div id="layer-text-1" class="layer-text" role="textbox" aria-hidden="true">
                 <h3 id="Label-Layer1">Layer 1<span> - photovoltaic</span></h3>
               </div>
             </label>
             <div aria-hidden="true" class="pointer-layer1"></div>
             <div aria-hidden="true" class="pointer-layer1-helper"></div>
             <!-- Hidden box -->
-            <div id="HiddenLayer1">
+            <div id="HiddenLayer1" aria-hidden="true">
               <h3>Layer 1 - photovoltaic</h3>
               <ul>
                 <li>The first layer makes up the surface of the solution.</li>
@@ -144,15 +144,15 @@
               </ul>
             </div>
 
-            <input id="layer2" type="radio" name="layerFigure" aria-hidden="true">
-            <label for="layer2" tabindex="0" class="layerfigure-layer2 layer-label" aria-hidden="false">
-              <div class="layer-text" role="textbox" aria-hidden="false">
+            <input id="layer2" type="radio" name="layerFigure" aria-labelledby="HiddenLayer2">
+            <label for="layer2" tabindex="0" class="layerfigure-layer2 layer-label" aria-hidden="true">
+              <div class="layer-text" role="textbox" aria-hidden="true">
                 <h3 id="Label-Layer2">Layer 2<span> - Thermoelectric</span></h3>
               </div>
             </label>
             <div aria-hidden="true" class="pointer-layer2"></div>
             <!-- Hidden box -->
-            <div id="HiddenLayer2">
+            <div id="HiddenLayer2" aria-hidden="true">
               <h3>Layer 2 - Thermoelectric</h3>
               <ul>
                 <li>The second layer is a thermoelectric paint, which converts heat into electrical energy.</li>
@@ -160,8 +160,8 @@
               </ul>
             </div>
 
-            <input id="layer3" type="radio" name="layerFigure" aria-hidden="true">
-            <label for="layer3" tabindex="0" class="layerfigure-layer3 layer-label" aria-hidden="false">
+            <input id="layer3" type="radio" name="layerFigure" aria-labelledby="HiddenLayer3">
+            <label for="layer3" tabindex="0" class="layerfigure-layer3 layer-label" aria-hidden="true">
               <div class="layer-text" role="textbox" aria-hidden="true">
                 <h3 id="Label-Layer3">Layer 3<span> - semiconductor</span></h3>
               </div>
@@ -169,7 +169,7 @@
             <div aria-hidden="true" class="pointer-layer3"></div>
             <div aria-hidden="true" class="pointer-layer3-helper"></div>
             <!-- Hidden box -->
-            <div id="HiddenLayer3">
+            <div id="HiddenLayer3" aria-hidden="true">
               <h3>Layer 3 - semiconductor</h3>
               <ul>
                 <li>The last layer consists of a material with conducting properties.</li>
@@ -179,9 +179,9 @@
           </div>
 
           <div aria-label="Image of three stacked layers" class="layerfigure-image-container mobile-remove">
-            <label aria-labelledby="Label-Layer1" id="image-cover-1" aria-describedby="layer-text-1" for="layer1"></label>
-            <label aria-labelledby="Label-Layer1" id="image-cover-2" aria-describedby="layer-text-2" for="layer2"></label>
-            <label aria-labelledby="Label-Layer1" id="image-cover-3" aria-describedby="layer-text-3" for="layer3"></label>
+            <label id="image-cover-1" aria-labelledby="HiddenLayer1Test" for="layer1"></label>
+            <label id="image-cover-2" aria-labelledby="HiddenLayer2" for="layer2"></label>
+            <label id="image-cover-3" aria-labelledby="HiddenLayer3" for="layer3"></label>
             <picture>
               <source srcset="img/LayerFigureSpacing2.png" media="(max-width: 850px)">
               <img id="layer-image" src="img/LayerFigureSpacing1.png" alt="Three stacked layers">

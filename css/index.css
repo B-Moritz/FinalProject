@@ -451,19 +451,19 @@ main {
     width: 100vw;
   }
 }
-/* End styles for startpage ------------------------------------- */
+/*--- End styles for startpage ------------------------------------- */
 
 
-/* Style for solution page -------------------------------------- */
+/*--- Style for solution page -------------------------------------- */
 
 /* Layer figure */
 .layerfigure-container {
-  height: 50rem;
+  height: 45rem;
   overflow: auto;
   margin: 1rem 10vw;
 
   /* Colors */
-  --light: #f56700;
+  --light: #ff6c00;
   --middle: #6c2e00;
   --dark: #575757;
 
@@ -503,9 +503,19 @@ main {
 .layerfigure-container > div input {
   position: absolute;
   margin: 0;
-  height: 0;
-  width: 0;
   opacity: 0;
+  height: 3rem;
+  width: 18rem;
+  left: 1rem;
+}
+#layer1 {
+  top: 4.5rem;
+}
+#layer2 {
+  top: 11rem;
+}
+#layer3 {
+  top: 17rem;
 }
 .layerfigure-row {
   background-color: rgba(240, 240, 240, 1);
@@ -517,7 +527,7 @@ main {
   margin: 1rem 10vw;
 }
 .layerfigure-row h2 {
-  color: var(--color-orange);
+  color: black;
 }
 .expl-normal {
   display: none;
@@ -636,7 +646,6 @@ input[id*="layer"]:checked + label > .layer-text {
 #layer3:checked ~ .pointer-layer3-helper {
   opacity: 1;
 }
-
 [id*="HiddenLayer"] {
   display: none;
   position: absolute;
@@ -732,12 +741,6 @@ input[id*="layer"]:checked + label > .layer-text {
     transform-origin: top left;
     left: 17rem;
   }
-  .pointer-layer1-helper {
-    display: none;
-  }
-  .pointer-layer3-helper {
-    display: none;
-  }
 }
 
 @media (max-width: 985px) {
@@ -799,6 +802,7 @@ input[id*="layer"]:checked + label > .layer-text {
     top: calc(3.5rem + 8rem + 5rem);
     height: 8rem;
     border-radius: 0 0 10px 10px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -832,7 +836,6 @@ input[id*="layer"]:checked + label > .layer-text {
   .pointer-layer1 {
     top: 5.3rem;
     left: 6.5rem;
-    width:
   }
   .pointer-layer2 {
     top: 9.65rem;
@@ -870,7 +873,7 @@ input[id*="layer"]:checked + label > .layer-text {
     top: calc(7rem + 5rem);
     height: 6rem;
     border-radius: 0 0 10px 10px;
-}
+  }
 }
 
 @media (max-width: 570px) {
@@ -881,58 +884,99 @@ input[id*="layer"]:checked + label > .layer-text {
 
 @media (max-width: 500px) {
   .layerfigure-container {
-    height: calc(55rem - 10vw);
+    height: 43rem;
     overflow: hidden;
   }
+  .expl-normal,
+  .expl-touch {
+    font-size: 1.1rem;
+  }
+  .layerfigure-row h2 {
+    font-size: 1.3rem;
+  }
+  .layerfigure-row p {
+    font-size: 1.1rem;
+  }
   .layer-label {
-    width: 99%;
+    width: auto;
     font-size: 0.8rem;
     margin: 0;
+    float: left;
+    display: inline-block;
+  }
+  .layer-label > .layer-text {
+    border-radius: 0 0 0 0;
+    padding: 0 calc(0.1rem + 2vw);
+  }
+  #layerfiguretxt {
+    width: 80vw;
+    display: block;
   }
   #HiddenLayer1,
   #HiddenLayer2,
   #HiddenLayer3 {
-    top: calc(16rem - 6vw);
+    top: 5rem;
+  }
+  .mobile-remove {
+    display: none;
+  }
+  .mobile-image {
+    display: inline-block;
+    padding: 0 calc((80vw - 15rem) / 2);
+    width: 80vw;
   }
   #layer-image-mobile {
-    width: 19rem;
+    width: 15rem;
+    z-index: 50;
   }
   #image-cover-1 {
-    top: var(--image-margin-top);
-    height: 10em;
+    top: 2rem;
+    height: 6rem;
+    left: calc((80vw - 15rem) / 2);
   }
   #image-cover-2 {
-    top: calc(var(--image-margin-top) + 10rem);
-    height: 5rem;
+    top: 8rem;
+    height: 4rem;
+    left: calc((80vw - 15rem) / 2);
   }
   #image-cover-3 {
-    top: calc(var(--image-margin-top) + 10rem + 5rem);
-    height: 6.5rem;
+    top: 12rem;
+    height: 5rem;
+    left: calc((80vw - 15rem) / 2);
   }
   .pointer-layer1 {
-    z-index: 1;
-    width: 14.1rem;
-    top: -0.2rem;
+    width: 11.5rem;
+    top: 0rem;
+    left: 2.5rem;
+    transform: rotate(-90deg);
+    transform-origin: top left;
   }
   .pointer-layer1-helper {
+    z-index: 0;
+    display: inline-block;
     width: 9rem;
+    left: 2.5rem;
+    top: -11.5rem;
+    transform: rotate(-20deg);
+    transform-origin: top left;
   }
   .pointer-layer2 {
-    top: 4.5rem;
-    left: 18rem;
-    width: 15rem;
+    top: 0rem;
+    left: 7.65rem;
+    width: 10rem;
+    transform: rotate(-90deg);
+    transform-origin: top left;
   }
   .pointer-layer3 {
     transform-origin: bottom left;
-    top: 9rem;
-    left: calc(18.2rem + 6vw);
-    width: 11.3rem;
+    top: 0rem;
+    left: 12.8rem;
+    width: 6rem;
     border-radius: 0 5px 5px 0;
+    transform: rotate(-90deg);
+    transform-origin: top left;
   }
-  .pointer-layer3-helper {
-    left: calc(18rem + 6vw);
-    width: 5rem;
-  }
+
   #HiddenLayer1,
   #HiddenLayer2,
   #HiddenLayer3 {
@@ -940,9 +984,14 @@ input[id*="layer"]:checked + label > .layer-text {
     margin: 0;
   }
   [id*="HiddenLayer"] li {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+  }
+  [id*="HiddenLayer"] h3 {
+    font-size: 1.3rem;
   }
 }
+
+
 /*--- End layer figure ----------------------------------------------*/
 
 
