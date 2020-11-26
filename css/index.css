@@ -358,6 +358,7 @@ main {
 .col-text {
   width: 50vw;
   height: auto;
+  text-align: left;
 }
 .col-text h2 {
   color: var(--color-orange);
@@ -441,7 +442,7 @@ main {
     order: 2;
     padding: 2rem 0;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .img-container-storage {
@@ -1125,7 +1126,7 @@ input[type=text], textarea::-webkit-input-placeholder {
   }
   .contact-container {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     align-items: center;
     width: 100%;
 
