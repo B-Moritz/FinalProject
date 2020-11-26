@@ -126,9 +126,9 @@
           </div>
 
           <div id="layerfiguretxt">
-            <input id="layer1" type="radio" name="layerFigure" checked="checked" aria-labelledby="HiddenLayer1">
+            <input id="layer1" type="radio" name="layerFigure" checked="checked" aria-labelledby="Label-Layer1" aria-describedby="layer-description-1">
             <label for="layer1" tabindex="0" class="layerfigure-layer1 layer-label" aria-hidden="true">
-              <div id="layer-text-1" class="layer-text" role="textbox" aria-hidden="true">
+              <div id="layer-text-1" class="layer-text" aria-hidden="true">
                 <h3 id="Label-Layer1">Layer 1<span> - photovoltaic</span></h3>
               </div>
             </label>
@@ -137,15 +137,15 @@
             <!-- Hidden box -->
             <div id="HiddenLayer1" aria-hidden="true">
               <h3>Layer 1 - photovoltaic</h3>
-              <ul>
+              <ul id="layer-description-1">
                 <li>The first layer makes up the surface of the solution.</li>
                 <li>The layer consists of a photovoltaic paint that generates electrical current from sunlight.</li>
               </ul>
             </div>
 
-            <input id="layer2" type="radio" name="layerFigure" aria-labelledby="HiddenLayer2">
+            <input id="layer2" type="radio" name="layerFigure" aria-labelledby="Label-Layer2" aria-describedby="layer-description-2">
             <label for="layer2" tabindex="0" class="layerfigure-layer2 layer-label" aria-hidden="true">
-              <div class="layer-text" role="textbox" aria-hidden="true">
+              <div class="layer-text" aria-hidden="true">
                 <h3 id="Label-Layer2">Layer 2<span> - Thermoelectric</span></h3>
               </div>
             </label>
@@ -153,15 +153,15 @@
             <!-- Hidden box -->
             <div id="HiddenLayer2" aria-hidden="true">
               <h3>Layer 2 - Thermoelectric</h3>
-              <ul>
+              <ul id="layer-description-2">
                 <li>The second layer is a thermoelectric paint, which converts heat into electrical energy.</li>
                 <li>It is thicker than the other layers and has the ability to conduct electrical current.</li>
               </ul>
             </div>
 
-            <input id="layer3" type="radio" name="layerFigure" aria-labelledby="HiddenLayer3">
+            <input id="layer3" type="radio" name="layerFigure" aria-labelledby="Label-Layer3" aria-describedby="layer-description-3">
             <label for="layer3" tabindex="0" class="layerfigure-layer3 layer-label" aria-hidden="true">
-              <div class="layer-text" role="textbox" aria-hidden="true">
+              <div class="layer-text" aria-hidden="true">
                 <h3 id="Label-Layer3">Layer 3<span> - semiconductor</span></h3>
               </div>
             </label>
@@ -170,7 +170,7 @@
             <!-- Hidden box -->
             <div id="HiddenLayer3" aria-hidden="true">
               <h3>Layer 3 - semiconductor</h3>
-              <ul>
+              <ul id="layer-description-3">
                 <li>The last layer consists of a material with conducting properties.</li>
                 <li>This element ensures that the electrical energy from the thermoelectric paint is added to a circuit.</li>
               </ul>
@@ -178,9 +178,9 @@
           </div>
 
           <div aria-label="Image of three stacked layers" class="layerfigure-image-container mobile-remove">
-            <label id="image-cover-1" aria-labelledby="HiddenLayer1Test" for="layer1"></label>
-            <label id="image-cover-2" aria-labelledby="HiddenLayer2" for="layer2"></label>
-            <label id="image-cover-3" aria-labelledby="HiddenLayer3" for="layer3"></label>
+            <label id="image-cover-1" for="layer1" aria-hidden="true"></label>
+            <label id="image-cover-2" for="layer2" aria-hidden="true"></label>
+            <label id="image-cover-3" for="layer3" aria-hidden="true"></label>
             <picture>
               <source srcset="img/LayerFigureSpacing2.png" media="(max-width: 850px)">
               <img id="layer-image" src="img/LayerFigureSpacing1.png" alt="Three stacked layers">

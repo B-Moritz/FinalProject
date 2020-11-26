@@ -741,6 +741,16 @@ input[id*="layer"]:checked + label > .layer-text {
     transform-origin: top left;
     left: 17rem;
   }
+  .layerfigure-container > div input {
+    width: 15rem;
+  }
+  #layer2 {
+    top: 10.5rem;
+  }
+  #layer3 {
+    top: 17rem;
+  }
+
 }
 
 @media (max-width: 985px) {
@@ -750,6 +760,7 @@ input[id*="layer"]:checked + label > .layer-text {
   .layerfigure-container {
     --text-container-margin-right: 8vw;
     overflow-x: hidden;
+    height: 50rem;
   }
   #layerfiguretxt {
     width: 13rem;
@@ -802,6 +813,20 @@ input[id*="layer"]:checked + label > .layer-text {
     top: calc(3.5rem + 8rem + 5rem);
     height: 8rem;
     border-radius: 0 0 10px 10px;
+  }
+  .layerfigure-container > div input {
+    height: 3.3rem;
+    width: 11rem;
+    left: 1rem;
+  }
+  #layer1 {
+    top: 5.6rem;
+  }
+  #layer2 {
+    top: 11.7rem;
+  }
+  #layer3 {
+    top: 18.5rem;
   }
 }
 
@@ -874,6 +899,20 @@ input[id*="layer"]:checked + label > .layer-text {
     height: 6rem;
     border-radius: 0 0 10px 10px;
   }
+  .layerfigure-container > div input {
+    height: 3rem;
+    width: 6rem;
+    left: 0.5rem;
+  }
+  #layer1 {
+    top: 2.6rem;
+  }
+  #layer2 {
+    top: 8rem;
+  }
+  #layer3 {
+    top: 13.7rem;
+  }
 }
 
 @media (max-width: 570px) {
@@ -884,7 +923,7 @@ input[id*="layer"]:checked + label > .layer-text {
 
 @media (max-width: 500px) {
   .layerfigure-container {
-    height: 43rem;
+    height: 45rem;
     overflow: hidden;
   }
   .expl-normal,
@@ -906,7 +945,10 @@ input[id*="layer"]:checked + label > .layer-text {
   }
   .layer-label > .layer-text {
     border-radius: 0 0 0 0;
-    padding: 0 calc(0.1rem + 2vw);
+    padding: 1.1rem calc(0.1rem + 2vw);
+  }
+  .layer-text h3 {
+    margin: 0;
   }
   #layerfiguretxt {
     width: 80vw;
