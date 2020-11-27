@@ -88,20 +88,20 @@
     <main id="content-solution">
       <div class="row">
         <div class="col-text">
-          <h2>Several techniques</h2>
+          <h2>A combination of different techniques</h2>
           <p>
             Our technology features several techniques to harvest energy from sunlight.
             One part of the solution consists of a photovoltaic paint.
-            This paint consists of an element which converts sunlight to electrical current.
-            The material has also semiconductor properties that make it possible to connect the material to an electrical circuit.
+            This paint contains small particles which converts sunlight to electrical current.
+            The material has also sufficient conducting properties which make it possible to connect the material to an electrical circuit.
             <br><br>
-            The second feature is a paint that produces electrical energy from heat.
+            The second technology is a paint that produces electrical energy from heat.
             Large surfaces like roofs or building facade absorb a large amount of energy which produces heat.
             This heat is then converted into electrical energy with a thermoelectric paint.
           </p>
         </div>
         <div class="col-icon combination-icon">
-          <img src="img/suntobulb_fig_horisontal.png" alt="This ">
+          <img src="img/suntobulb_fig_horisontal.png" alt="Solar energy and solar paint results in electrical energy">
         </div>
       </div>
 
@@ -129,14 +129,14 @@
             <input id="layer1" type="radio" name="layerFigure" checked="checked" aria-labelledby="Label-Layer1" aria-describedby="layer-description-1">
             <label for="layer1" tabindex="0" class="layerfigure-layer1 layer-label" aria-hidden="true">
               <div id="layer-text-1" class="layer-text" aria-hidden="true">
-                <h3 id="Label-Layer1">Layer 1<span> - photovoltaic</span></h3>
+                <h3 id="Label-Layer1">Layer 1<span> - Photovoltaic</span></h3>
               </div>
             </label>
             <div aria-hidden="true" class="pointer-layer1"></div>
             <div aria-hidden="true" class="pointer-layer1-helper"></div>
             <!-- Hidden box -->
             <div id="HiddenLayer1" aria-hidden="true">
-              <h3>Layer 1 - photovoltaic</h3>
+              <h3>Layer 1 - Photovoltaic</h3>
               <ul id="layer-description-1">
                 <li>The first layer makes up the surface of the solution.</li>
                 <li>The layer consists of a photovoltaic paint that generates electrical current from sunlight.</li>
@@ -172,12 +172,12 @@
               <h3>Layer 3 - semiconductor</h3>
               <ul id="layer-description-3">
                 <li>The last layer consists of a material with conducting properties.</li>
-                <li>This element ensures that the electrical energy from the thermoelectric paint is added to a circuit.</li>
+                <li>This element ensures that the photovoltaic and thermoelectric paint is connected to an electrical circuit</li>
               </ul>
             </div>
           </div>
 
-          <div aria-label="Image of three stacked layers" class="layerfigure-image-container mobile-remove">
+          <div aria-labelledby="layer-image" class="layerfigure-image-container mobile-remove">
             <label class="image-cover-1" for="layer1" aria-hidden="true"></label>
             <label class="image-cover-2" for="layer2" aria-hidden="true"></label>
             <label class="image-cover-3" for="layer3" aria-hidden="true"></label>
@@ -191,17 +191,17 @@
 
       <div class="row">
         <div class="col-text">
-          <h2>How is the energy harvested?</h2>
-          <p>
-            The sunlight is first absorbed by the photovoltaic paint, where 20% of the energy from the sunlight is converted into electrical current in layer 3.
+          <h2>How is the electricity generated?</h2>
+          <p id="harvest-description">
+            The sunlight is first absorbed by the photovoltaic paint in layer 1, where 20% of the energy from the sunlight is converted into electrical current.
             A large amount of the remaining energy is then turned into heat.
-            Following that, this heat is heating up layer 2 consisting of the thermoelectric paint.
+            This heat increases the temperature in layer 2 consisting of the thermoelectric paint.
             This causes this layer to produce electrical current.
-            The electrical energy produced is flowing in a closed circuit due to the conducting abilities of layer 2 and 3 and the two cables that are connected to layer 1 and 3.
+            The electrical energy produced is flowing in a closed circuit due to the conducting abilities of layer 2 and 3 and two cables that are connected to layer 1 and 3.
           </p>
         </div>
         <div class="col-icon combination-icon">
-          <img src="img/LayerFigure_coating_zoom.png" alt="A figure that ilustrates the flow of electrons between the two layers">
+          <img aria-describedby="harvest-description" src="img/LayerFigure_coating_zoom.png" alt="A figure that ilustrates the flow of electrons between the two layers">
         </div>
       </div>
     </main>
