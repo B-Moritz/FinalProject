@@ -2,6 +2,11 @@
 
 /* CSS variables */
 
+
+div{
+ /* border: solid 3px gray; */
+}
+
 :root {
   --color-orange: #f56700;
  /*#ff6c00;*/
