@@ -359,9 +359,12 @@ main {
 }
 .source {
   color: #f56700;
+  padding: 0.2rem;
+  border-radius: 5px 5px 5px 5px;
 }
 .source:hover {
-  text-decoration: underline;
+  background-color: black;
+  color: white;
 }
 .row {
   padding: 2rem 10vw 4rem;
@@ -438,10 +441,10 @@ main {
   width: 35%;
 }
 #img-container-techniques {
-  padding: 0;  
+  padding: 0;
 }
 #img-containter-generated {
-  width: 60vw;
+  width: 40vw;
   padding: 0;
   padding-left: 10%;
 }
@@ -483,11 +486,18 @@ main {
     margin: 0;
     padding: 0;
   }
+  #text-generated {
+    width: 100%;
+  }
   #combination-icon-techniques {
     width: 100%;
   }
   #combination-icon-generated {
     width: 50%;
+  }
+  #img-containter-generated {
+    width: 100%;
+    padding-left: 0;
   }
 }
 /*--- End styles for startpage ------------------------------------- */
