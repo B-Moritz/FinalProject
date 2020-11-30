@@ -14,7 +14,7 @@ var textEmail = document.getElementById("email");
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
     if (textEmail.value==="" || textMessage.value==="") {
-        alert("Please complete the form.");
+        alert("Please fill out the form.");
     }
     else {
         modal.style.display = "block";
