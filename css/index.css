@@ -1,17 +1,10 @@
 
 
-/* CSS variables */
+
 
 
 div{
   // border: solid 3px gray;
-}
-
-:root {
-  --color-orange: #f56700;
- /*#ff6c00;*/
-  --color-grey: #e5e5e5;
-  --color-3: #003539;
 }
 
 * {
@@ -52,7 +45,7 @@ body {
 */
 
 header {
-  background-color: var(--color-orange);
+  background-color: #f56700;
 }
 
 .header-content {
@@ -63,7 +56,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-orange);
+  background-color: #f56700;
 }
 
 .header-box {
@@ -122,7 +115,7 @@ h2, h1 {
   top: 0;
   width: 100vw;
   height: 10vh;
-  background-color: var(--color-orange);
+  background-color: #f56700;
   border-bottom-style: solid;
   border-color: white;
   border-width: 2px;
@@ -276,7 +269,7 @@ a:before, a:after, a > span:before, a > span:after {
     text-align: center;
     align-items: center;
     width: 40vw;
-    background-color: var(--color-orange);
+    background-color: #f56700;
     transition: transform 0.5s ease-in;
   }
 
@@ -433,7 +426,7 @@ main {
   font-weight: 700;
 }
 .read-more-button:hover {
-  background-color: var(--color-orange);
+  background-color: #f56700;
   border-radius: 5px 5px 5px 5px;
   border-color: white;
   color: white;
@@ -1114,7 +1107,7 @@ input[id*="layer"]:checked + label {
 }
 
 .contact-section h2 {
-  color: var(--color-orange);
+  color: #f56700;
 }
 
 .contact-title {
@@ -1161,7 +1154,7 @@ input[type=text], textarea {
 
 #myBtn {
   color: white;
-  background-color: var(--color-orange);
+  background-color: #f56700;
   font-size: 1.4rem;
   padding: 1rem 3rem;
   border-radius: 5px 5px 5px 5px;
