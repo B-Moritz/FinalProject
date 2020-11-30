@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>ExpRadioSafari</title>
-    <style>
+    <link type="text/css" rel="stylesheet" href="../css/index.css">
+    <!--<style>
       body {
         margin: 10rem;
       }
@@ -22,7 +23,7 @@
           display: none;
         }
       }
-    </style>
+    </style>-->
   </head>
   <body>
     <div>
@@ -34,6 +35,13 @@
 
       <input id="test3" name="RadioTest" type="radio" aria-describedby="Demo">
       <label for="test3">Test3</label>
+
+      <input id="layer3" type="radio" name="layerFigure" aria-describedby="layer-description-3" title="Select layer 3">
+      <label for="layer3" class="layerfigure-layer3 layer-label">
+        Layer 3<span> - Conductor</span>
+      </label>
+      <div aria-hidden="true" class="pointer-layer3"></div>
+      <div aria-hidden="true" class="pointer-layer3-helper"></div>
     </div>
 
     <p id="Demo">testqariwgjaetgnrlsfv</p>
