@@ -518,6 +518,11 @@ main {
     padding-left: 0;
   }
 }
+@media (max-width: 50em) {
+  #combination-icon-generated {
+    width: 17.5rem;
+  }
+}
 /*--- End styles for startpage ------------------------------------- */
 
 
