@@ -69,6 +69,7 @@ header {
 .header-box {
   display: flex;
   height: auto;
+  width: 50%;
   align-items: center;
 }
 
@@ -374,7 +375,7 @@ main {
   border-radius: 5px 5px 5px 5px;
 }
 .row {
-  padding: 2rem 10vw 4rem;
+  padding: 100px 10vw 4rem;
   display: flex;
   flex-direction: row;
 }
@@ -472,8 +473,8 @@ main {
   }
   .col-icon {
     order: 1;
-    margin-top: 3rem;
-    padding-bottom: 3rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
     padding-left: 0;
     width: 100%;
     justify-content: center;
