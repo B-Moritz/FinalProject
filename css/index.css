@@ -518,6 +518,11 @@ main {
     padding-left: 0;
   }
 }
+@media (max-width: 50em) {
+  #combination-icon-generated {
+    width: 17.5rem;
+  }
+}
 /*--- End styles for startpage ------------------------------------- */
 
 
@@ -623,43 +628,39 @@ main {
   }
 }
 
-.layer-label > .layer-text {
-  padding: var(--layer-text-padding);
+.layer-label {
   opacity: 0.3;
   border-radius: 1rem 1rem 1rem 1rem;
+  font-size: 1.5rem;
+  display: block;
+  position: relative;
+  padding: 1.4rem 1rem;
+  z-index: 1;
+  font-weight: bold;
 }
-.layer-text h3 {
-  font-size: 1.4rem;
-}
-input[id*="layer"]:checked + label > .layer-text {
+
+input[id*="layer"]:checked + label {
   opacity: 1;
 }
-#layer1:checked + label > .layer-text,
-#layer2:checked + label > .layer-text,
-#layer3:checked + label > .layer-text {
+#layer1:checked + label,
+#layer2:checked + label,
+#layer3:checked + label {
   background-color: white;
   color: black;
   border-style: solid;
   border-width: 0.2rem;
   border-color: black;
 }
-#layer1:checked + label > .layer-text {
+#layer1:checked + label {
   border-color: var(--light);
 }
-#layer2:checked + label > .layer-text {
+#layer2:checked + label {
   border-color: var(--middle);
 }
-#layer3:checked + label > .layer-text {
+#layer3:checked + label {
   border-color: var(--dark);
 }
-.layer-label {
-  display: block;
-  position: relative;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  padding: 0;
-  z-index: 1;
-}
+
 .layerfigure-layer1 {
   margin-top: 3.5rem;
   margin-bottom: 1.65rem;
@@ -672,9 +673,9 @@ input[id*="layer"]:checked + label > .layer-text {
   from {box-shadow: 0 3px 5px black, 0 -3px 5px black;}
     to {box-shadow: 0px 0px 0px black, 0 0 0 black;}
 }
-#layer1:focus + label .layer-text,
-#layer2:focus + label .layer-text,
-#layer3:focus + label .layer-text   {
+#layer1:focus + label,
+#layer2:focus + label,
+#layer3:focus + label   {
   animation: layerFocus 1s;
   animation-timing-function: ease-out;
 }
@@ -777,7 +778,7 @@ input[id*="layer"]:checked + label > .layer-text {
 
 /* Media querry for viewport 1140px */
 @media (max-width: 71.25em) {
-  .layer-text h3 {
+  .layer-label {
     font-size: 1.2rem;
   }
   .layerfigure-container {
@@ -831,7 +832,7 @@ input[id*="layer"]:checked + label > .layer-text {
 
 /* Media querry for viewport 985px */
 @media (max-width: 61.5625em) {
-  .layer-text h3 {
+  .layer-label {
     font-size: 1.1rem;
   }
   .layerfigure-container {
@@ -912,7 +913,7 @@ input[id*="layer"]:checked + label > .layer-text {
 
 /* Media querry for viewport 850px */
 @media (max-width: 53.125em) {
-  [id*="Label-Layer"] span {
+  [class*="layer-label"] span {
     display: none;
   }
   [id*="HiddenLayer"] {
@@ -964,7 +965,6 @@ input[id*="layer"]:checked + label > .layer-text {
   }
   .layer-label {
     width: auto;
-    font-size: 2vw;
   }
   .image-cover-1 {
     top: 2rem;
@@ -1021,17 +1021,13 @@ input[id*="layer"]:checked + label > .layer-text {
   }
   .layer-label {
     width: auto;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 0;
     float: left;
     display: inline-block;
-  }
-  .layer-label > .layer-text {
     padding: 1.1rem calc(0.1rem + 2vw);
   }
-  .layer-text h3 {
-    margin: 0;
-  }
+
   #layerfiguretxt {
     width: 80vw;
     display: block;
