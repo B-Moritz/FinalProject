@@ -364,7 +364,7 @@ main {
   text-decoration: underline;
 }
 .row {
-  padding: 0 10vw 6rem;
+  padding: 1rem 10vw 5rem;
   display: flex;
   flex-direction: row;
 }
