@@ -85,6 +85,7 @@ header {
 #header-img {
   width: 400px;
   height: auto;
+  float: right;
 
 }
 
@@ -251,6 +252,7 @@ a:before, a:after, a > span:before, a > span:after {
   #header-img {
     width: 300px;
     height: auto;
+    float: left;
   }
   h2 {
     font-size: 2.5rem;
@@ -1250,6 +1252,73 @@ input[type=text], textarea::-webkit-input-placeholder {
 @media screen and (max-width: 768px){
   .modal-content {
     width: 90%;
+  }
+}
+
+footer {
+  padding: 1rem;
+  background-color: rgba(240, 240, 240, 1);
+  margin-top: 50px;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container-list {
+  width: 50%;
+  height: 100%;
+  list-style: none;
+  font-size: 1rem;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+}
+.footer-container-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  border-style: solid;
+  border-color: black;
+}
+
+.socialMediaIcon {
+  width: 40px;
+  height: 40px;
+  //border-radius: 30px 30px 30px 30px;
+  //border-color: rgba(0,0,0,0);
+}
+
+.list-item {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1024px){
+  .footer-container-list {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .footer-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-container-list {
+    order: 2;
+  }
+  .footer-container-socials{
+    order: 1;
+  }
+  .socialMediaIcon {
+    width: 30px;
+    height: 30px;
   }
 }
 
