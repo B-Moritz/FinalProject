@@ -4,7 +4,7 @@
 
 
 div{
- /* border: solid 3px gray; */
+  // border: solid 3px gray;
 }
 
 :root {
@@ -1242,4 +1242,20 @@ input[type=text], textarea::-webkit-input-placeholder {
   .modal-content {
     width: 90%;
   }
+}
+
+
+.header-content-about {
+  height: 65vh;
+  top: 10vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  background: url("../img/about_us_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-color: var(--color-orange);
 }
