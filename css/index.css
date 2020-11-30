@@ -1341,11 +1341,3 @@ footer {
   align-items: center;
   background-color: var(--color-orange);
 }
-=======
-  width: auto;
-  background: url("../img/about_us_header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background-color: var(--color-orange);
-}
->>>>>>> 26164c7b00958d9fb5c7df82f4b5bda17b95730c
