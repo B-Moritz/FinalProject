@@ -355,6 +355,15 @@ a:before, a:after, a > span:before, a > span:after {
 main {
   margin-top: 4rem;
 }
+.source {
+  color: blue;
+}
+.source:hover {
+  text-decoration: underline;
+}
+.source:visited {
+  color: rgba(142, 62, 92, 1);
+}
 .row {
   padding: 6rem 10vw 0;
   display: flex;
