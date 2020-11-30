@@ -56,7 +56,7 @@ header {
 }
 
 .header-content {
-  height: 90vh;
+  height: 65vh;
   top: 10vh;
   position: relative;
   display: flex;
@@ -83,7 +83,7 @@ header {
 
 
 #header-img {
-  width: 400px;
+  width: 256px;
   height: auto;
   float: right;
 
@@ -358,13 +358,10 @@ main {
   margin-top: 4rem;
 }
 .source {
-  color: blue;
+  color: #f56700;
 }
 .source:hover {
   text-decoration: underline;
-}
-.source:visited {
-  color: rgba(142, 62, 92, 1);
 }
 .row {
   padding: 6rem 10vw 0;
@@ -376,8 +373,11 @@ main {
   height: auto;
   text-align: left;
 }
+.col-text-solution {
+  width: 40vw;
+}
 .col-text h2 {
-  color: var(--color-orange);
+  color: #f56700;
 }
 .col-text p {
   font-size: 1.4rem;
@@ -407,7 +407,7 @@ main {
 .read-more-button {
   color: black;
   font-size: 1.4rem;
-  padding: 0.5rem;
+  padding: 1rem 3rem;
   border-style: solid;
   border-color: black;
   border-radius: 5px 5px 5px 5px;
@@ -433,11 +433,18 @@ main {
   position: relative;
   top: -12rem;
 }
+#combination-icon-techniques {
+  width: 35%;
+}
 .combination-icon > img {
-  width: 100%;
+  width: 90%;
 }
 .combination-icon {
+  display: flex;
+  justify-content: center;
   padding: 0;
+  padding-left: 10%;
+  width: 60vw;
 }
 
 @media (max-width: 1024px) {
@@ -1157,8 +1164,9 @@ input[type=text], textarea::-webkit-input-placeholder {
 }
 
 .text-section {
-  padding: 4rem 0 8rem 0;
+  padding: 0rem 0 4rem 0;
 }
+
 
 @media (max-width: 1024px) {
   .contact-title {
@@ -1332,16 +1340,12 @@ footer {
 
 
 .header-content-about {
-  height: 65vh;
+  height: 55vh;
   top: 10vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-  background: url("../img/about_us_header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background-color: var(--color-orange);
+  background-color: var(--color-orange);
 }
