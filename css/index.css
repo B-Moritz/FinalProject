@@ -70,15 +70,11 @@ header {
   display: flex;
   height: auto;
   align-items: center;
-
-
 }
 
 .header-img-container {
   width: 50%;
-  padding-right: 50px;
-
-
+  padding-right: 2%;
 }
 
 
@@ -91,13 +87,11 @@ header {
 
 .header-text {
   width: 50%;
-  padding-left: 50px;
+  padding-left: 2%;
   display: flex;
   text-align: left;
   align-items: center;
   color: white;
-
-
 }
 
 h2 {
@@ -250,9 +244,9 @@ a:before, a:after, a > span:before, a > span:after {
     text-align: center;
   }
   #header-img {
-    width: 300px;
+    width: 250px;
     height: auto;
-    float: left;
+    float: none;
   }
   h2 {
     font-size: 2.5rem;
@@ -311,7 +305,7 @@ a:before, a:after, a > span:before, a > span:after {
   }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 414px){
   #header-img{
     width: 200px;
     height: auto;
@@ -324,6 +318,16 @@ a:before, a:after, a > span:before, a > span:after {
   }
   .nav-links a {
     padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 350px){
+  #header-img{
+    width: 150px;
+    height: auto;
+  }
+  h2 {
+    font-size: 1.8rem;
   }
 }
 
@@ -383,6 +387,7 @@ main {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }
+
 .col-icon {
   width: 30vw;
   display: flex;
