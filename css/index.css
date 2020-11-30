@@ -75,7 +75,7 @@ header {
 
 .header-img-container {
   width: 50%;
-  padding-right: 2%;
+  padding-right: 4%;
 }
 
 
@@ -87,9 +87,8 @@ header {
 }
 
 .header-text {
-  width: 50%;
-  padding-left: 2%;
-  display: flex;
+  width: 70%;
+  padding-left: 4%;
   text-align: left;
   align-items: center;
   color: white;
@@ -244,6 +243,11 @@ a:before, a:after, a > span:before, a > span:after {
     align-items: center;
     text-align: center;
   }
+  .header-text {
+    padding-left: 0;
+    width: 70%;
+    text-align: center;
+  }
   #header-img {
     width: 250px;
     height: auto;
@@ -256,10 +260,7 @@ a:before, a:after, a > span:before, a > span:after {
     padding: 0;
     width: 70%;
   }
-  .header-text {
-    padding-left: 5%;
-    width: 70%;
-  }
+
 
 
   .nav-links {
