@@ -407,7 +407,7 @@ main {
 .read-more-button {
   color: black;
   font-size: 1.4rem;
-  padding: 0.5rem;
+  padding: 1rem 3rem;
   border-style: solid;
   border-color: black;
   border-radius: 5px 5px 5px 5px;
