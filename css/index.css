@@ -376,6 +376,9 @@ main {
   height: auto;
   text-align: left;
 }
+.col-text-solution {
+  width: 40vw;
+}
 .col-text h2 {
   color: var(--color-orange);
 }
@@ -434,10 +437,12 @@ main {
   top: -12rem;
 }
 .combination-icon > img {
-  width: 100%;
+  width: 90%;
 }
 .combination-icon {
   padding: 0;
+  padding-left: 10%;
+  width: 60vw;
 }
 
 @media (max-width: 1024px) {
