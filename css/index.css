@@ -373,6 +373,13 @@ main {
   border-color: black;
   border-radius: 5px 5px 5px 5px;
 }
+.source:focus {
+  background-color: black;
+  color: white;
+  border-color: black;
+  border-radius: 5px 5px 5px 5px;
+}
+
 .row {
   padding: 2rem 10vw 4rem;
   display: flex;
@@ -1384,4 +1391,3 @@ footer {
     font-size: 0.8rem;
   }
 }
-
