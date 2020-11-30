@@ -17,17 +17,22 @@
       #Demo {
         margin-top: 10rem;
       }
+      @media (max-width: 500px) {
+        label > span {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
     <input id="test1" name="RadioTest" type="radio" checked="checked" aria-describedby="Demo">
-    <label for="test1">Test1</label>
+    <label for="test1"><span>Test1</span></label>
 
     <input id="test2" name="RadioTest" type="radio" aria-describedby="Demo">
     <label for="test2">Test2</label>
 
     <input id="test3" name="RadioTest" type="radio" aria-describedby="Demo">
-    <label for="test3">Test2</label>
+    <label for="test3">Test3</label>
 
     <p id="Demo">testqariwgjaetgnrlsfv</p>
   </body>
