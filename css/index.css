@@ -56,7 +56,7 @@ header {
 }
 
 .header-content {
-  height: 90vh;
+  height: 65vh;
   top: 10vh;
   position: relative;
   display: flex;
@@ -83,7 +83,7 @@ header {
 
 
 #header-img {
-  width: 400px;
+  width: 256px;
   height: auto;
   float: right;
 
@@ -1162,8 +1162,9 @@ input[type=text], textarea::-webkit-input-placeholder {
 }
 
 .text-section {
-  padding: 4rem 0 8rem 0;
+  padding: 0rem 0 4rem 0;
 }
+
 
 @media (max-width: 1024px) {
   .contact-title {
@@ -1329,16 +1330,12 @@ footer {
 
 
 .header-content-about {
-  height: 65vh;
+  height: 55vh;
   top: 10vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-  background: url("../img/about_us_header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background-color: var(--color-orange);
+  background-color: var(--color-orange);
 }
