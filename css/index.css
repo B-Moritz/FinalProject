@@ -94,7 +94,7 @@ header {
   color: white;
 }
 
-h2 {
+h2, h1 {
   font-size: 3rem;
 }
 
@@ -248,7 +248,7 @@ a:before, a:after, a > span:before, a > span:after {
     height: auto;
     float: none;
   }
-  h2 {
+  h2, h1 {
     font-size: 2.5rem;
   }
   .header-img-container {
@@ -310,7 +310,7 @@ a:before, a:after, a > span:before, a > span:after {
     width: 200px;
     height: auto;
   }
-  h2 {
+  h2, h1 {
     font-size: 2rem;
   }
   .nav-logo {
@@ -363,22 +363,28 @@ main {
 }
 .source {
   color: #f56700;
+  padding: 0.2rem;
+  border-bottom-color: #f56700;
+  border-bottom-style: solid;
 }
 .source:hover {
-  text-decoration: underline;
+  background-color: black;
+  color: white;
+  border-color: black;
+  border-radius: 5px 5px 5px 5px;
 }
 .row {
-  padding: 1rem 10vw 5rem;
+  padding: 2rem 10vw 4rem;
   display: flex;
   flex-direction: row;
+}
+.row-text {
+  padding: 6.25rem 10vw 0;
 }
 .col-text {
   width: 50vw;
   height: auto;
   text-align: left;
-}
-.col-text-solution {
-  width: 40vw;
 }
 .col-text h2 {
   color: #f56700;
@@ -393,7 +399,6 @@ main {
   display: flex;
   padding-left: 10vw;
 }
-
 .img-container-storage {
   height: 80vh;
   padding-left: 0;
@@ -408,7 +413,6 @@ main {
   align-self: center;
   width: 12.5rem;
 }
-
 .read-more-button {
   color: black;
   font-size: 1.4rem;
@@ -438,16 +442,22 @@ main {
   position: relative;
   top: -12rem;
 }
+#text-generated {
+  width: 40vw;
+}
 #combination-icon-techniques {
   width: 35%;
 }
-.combination-icon img {
-  width: 90%;
+#img-container-techniques {
+  padding: 0;
 }
-.combination-icon {
+#img-containter-generated {
+  width: 40vw;
   padding: 0;
   padding-left: 10%;
-  width: 60vw;
+}
+#combination-icon-generated {
+  width: 90%
 }
 .comination-icon-picture {
   display: flex;
@@ -484,11 +494,18 @@ main {
     margin: 0;
     padding: 0;
   }
+  #text-generated {
+    width: 100%;
+  }
   #combination-icon-techniques {
     width: 100%;
   }
   #combination-icon-generated {
     width: 50%;
+  }
+  #img-containter-generated {
+    width: 100%;
+    padding-left: 0;
   }
 }
 /*--- End styles for startpage ------------------------------------- */
@@ -1366,16 +1383,5 @@ footer {
   .footer-container-list {
     font-size: 0.8rem;
   }
-
 }
 
-.header-content-about {
-  height: 55vh;
-  top: 10vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-orange);
-}
