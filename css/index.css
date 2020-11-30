@@ -56,7 +56,7 @@ header {
 }
 
 .header-content {
-  height: 65vh;
+  height: 60vh;
   top: 10vh;
   position: relative;
   display: flex;
