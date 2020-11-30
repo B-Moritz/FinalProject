@@ -358,13 +358,10 @@ main {
   margin-top: 4rem;
 }
 .source {
-  color: blue;
+  color: #f56700;
 }
 .source:hover {
   text-decoration: underline;
-}
-.source:visited {
-  color: rgba(142, 62, 92, 1);
 }
 .row {
   padding: 6rem 10vw 0;
@@ -380,7 +377,7 @@ main {
   width: 40vw;
 }
 .col-text h2 {
-  color: var(--color-orange);
+  color: #f56700;
 }
 .col-text p {
   font-size: 1.4rem;
@@ -410,7 +407,7 @@ main {
 .read-more-button {
   color: black;
   font-size: 1.4rem;
-  padding: 0.5rem;
+  padding: 1rem 3rem;
   border-style: solid;
   border-color: black;
   border-radius: 5px 5px 5px 5px;
@@ -436,10 +433,15 @@ main {
   position: relative;
   top: -12rem;
 }
+#combination-icon-techniques {
+  width: 35%;
+}
 .combination-icon > img {
   width: 90%;
 }
 .combination-icon {
+  display: flex;
+  justify-content: center;
   padding: 0;
   padding-left: 10%;
   width: 60vw;
@@ -1339,3 +1341,11 @@ footer {
   align-items: center;
   background-color: var(--color-orange);
 }
+=======
+  width: auto;
+  background: url("../img/about_us_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-color: var(--color-orange);
+}
+>>>>>>> 26164c7b00958d9fb5c7df82f4b5bda17b95730c
