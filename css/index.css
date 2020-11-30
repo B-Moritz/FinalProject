@@ -613,7 +613,7 @@ main {
 
 /* Styles applied on screens that support hover */
 @media (hover: hover) {
-  .layer-label:hover > .layer-text {
+  .layer-label:hover {
     background-color: var(--light);
     color: black;
     opacity: 1;
