@@ -100,7 +100,7 @@ header {
 
 }
 
-h2 {
+h2, h1 {
   font-size: 3rem;
 }
 
@@ -254,7 +254,7 @@ a:before, a:after, a > span:before, a > span:after {
     height: auto;
     float: left;
   }
-  h2 {
+  h2, h1 {
     font-size: 2.5rem;
   }
   .header-img-container {
@@ -316,7 +316,7 @@ a:before, a:after, a > span:before, a > span:after {
     width: 200px;
     height: auto;
   }
-  h2 {
+  h2, h1 {
     font-size: 2rem;
   }
   .nav-logo {
@@ -360,11 +360,14 @@ main {
 .source {
   color: #f56700;
   padding: 0.2rem;
-  border-radius: 5px 5px 5px 5px;
+  border-bottom-color: #f56700;
+  border-bottom-style: solid;
 }
 .source:hover {
   background-color: black;
   color: white;
+  border-color: black;
+  border-radius: 5px 5px 5px 5px;
 }
 .row {
   padding: 2rem 10vw 4rem;
@@ -1375,6 +1378,5 @@ footer {
   .footer-container-list {
     font-size: 0.8rem;
   }
-
 }
 
