@@ -364,9 +364,12 @@ main {
   text-decoration: underline;
 }
 .row {
-  padding: 1rem 10vw 5rem;
+  padding: 2rem 10vw 4rem;
   display: flex;
   flex-direction: row;
+}
+.row-text {
+  padding: 6.25rem 10vw 0;
 }
 .col-text {
   width: 50vw;
