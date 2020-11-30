@@ -430,6 +430,7 @@ main {
   border-color: black;
   border-radius: 5px 5px 5px 5px;
   transition: 0.2s ease;
+  font-weight: 700;
 }
 .read-more-button:hover {
   background-color: var(--color-orange);
@@ -1193,6 +1194,7 @@ input[type=text], textarea {
   border-style: none;
   transition: 0.2s ease;
   float: right;
+  font-weight: 700;
 }
 
 #myBtn:hover {
