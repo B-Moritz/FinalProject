@@ -376,7 +376,7 @@ main {
   border-radius: 5px 5px 5px 5px;
 }
 .row {
-  padding: 100px 10vw 4rem;
+  padding: 4rem 10vw 4rem;
   display: flex;
   flex-direction: row;
 }
