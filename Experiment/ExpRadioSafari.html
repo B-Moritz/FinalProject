@@ -26,23 +26,81 @@
     </style>-->
   </head>
   <body>
-    <figure>
-      <input id="test1" name="RadioTest" type="radio" checked="checked" aria-describedby="Demo">
-      <label for="test1"><span>Test1</span></label>
+    <div class="layerfigure-row">
+      <div>
+        <h2>A layer structure</h2>
+        <p>
+          The solution is implemented by painting three layers of paint on a surface like a roof or a building facade.
+        </p>
+      </div>
+      <figure role="group" class="layerfigure-container">
+        <p class="expl-normal" tabindex="0"><i>Please navigate the following figure by clicking or with tab and arrow keys.</i></p>
+        <p class="expl-touch" tabindex="0"><i>Please navigate the following figure by tapping the layers or labels.</i></p>
+        <!-- mobile Image -->
+        <div class="layerfigure-image-container mobile-image">
+          <label class="image-cover-1" for="layer1"></label>
+          <label class="image-cover-2" for="layer2"></label>
+          <label class="image-cover-3" for="layer3"></label>
+          <picture>
+            <img id="layer-image-mobile" src="img/LayerFigureSpacing2.png" alt="Three stacked layers">
+          </picture>
+        </div>
 
-      <input id="test2" name="RadioTest" type="radio" aria-describedby="Demo">
-      <label for="test2">Test2</label>
+        <div id="layerfiguretxt">
+          <input id="layer1" type="radio" name="layerFigure" checked="checked" aria-describedby="layer-description-1" title="Select layer 1">
+          <label for="layer1" class="layerfigure-layer1 layer-label">
+            Layer 1<span> - Photovoltaic</span>
+          </label>
+          <div aria-hidden="true" class="pointer-layer1"></div>
+          <div aria-hidden="true" class="pointer-layer1-helper"></div>
+          <!-- Hidden box -->
+          <div id="HiddenLayer1" aria-hidden="true">
+            <h3>Layer 1 - Photovoltaic</h3>
+            <ul id="layer-description-1">
+              <li>The first layer makes up the surface of the solution.</li>
+              <li>The layer consists of a photovoltaic paint that generates electrical current from sunlight.</li>
+            </ul>
+          </div>
 
-      <input id="test3" name="RadioTest" type="radio" aria-describedby="Demo">
-      <label for="test3">Test3</label>
+          <input id="layer2" type="radio" name="layerFigure" aria-describedby="layer-description-2" title="Select layer 2">
+          <label for="layer2" class="layerfigure-layer2 layer-label">Layer 2<span> - Thermoelectric</span></label>
+          <div aria-hidden="true" class="pointer-layer2"></div>
+          <!-- Hidden box -->
+          <div id="HiddenLayer2" aria-hidden="true">
+            <h3>Layer 2 - Thermoelectric</h3>
+            <ul id="layer-description-2">
+              <li>The second layer is a thermoelectric paint, which converts heat into electrical energy.</li>
+              <li>It is thicker than the other layers and has the ability to conduct electrical current.</li>
+            </ul>
+          </div>
 
-      <input id="layer3" type="radio" name="layerFigure" aria-describedby="layer-description-3" title="Select layer 3">
-      <label for="layer3" class="layerfigure-layer3 layer-label">
-        Layer 3<span> - Conductor</span>
-      </label>
-      <div aria-hidden="true" class="pointer-layer3"></div>
-      <div aria-hidden="true" class="pointer-layer3-helper"></div>
-    </figure>
+          <input id="layer3" type="radio" name="layerFigure" aria-describedby="layer-description-3" title="Select layer 3">
+          <label for="layer3" class="layerfigure-layer3 layer-label">
+            Layer 3<span> - Conductor</span>
+          </label>
+          <div aria-hidden="true" class="pointer-layer3"></div>
+          <div aria-hidden="true" class="pointer-layer3-helper"></div>
+          <!-- Hidden box -->
+          <div id="HiddenLayer3" aria-hidden="true">
+            <h3>Layer 3 - Conductor</h3>
+            <ul id="layer-description-3">
+              <li>The last layer consists of a material with conducting properties.</li>
+              <li>This element ensures that the photovoltaic and thermoelectric paint is connected to an electrical circuit</li>
+            </ul>
+          </div>
+        </div>
+
+        <div aria-labelledby="layer-image" class="layerfigure-image-container mobile-remove">
+          <label class="image-cover-1" for="layer1" aria-hidden="true"></label>
+          <label class="image-cover-2" for="layer2" aria-hidden="true"></label>
+          <label class="image-cover-3" for="layer3" aria-hidden="true"></label>
+          <picture>
+            <source srcset="img/LayerFigureSpacing2.png" media="(max-width: 850px)">
+            <img id="layer-image" src="img/LayerFigureSpacing1.png" alt="Three stacked layers">
+          </picture>
+        </div>
+      </figure>
+    </div>
 
     <p id="Demo">testqariwgjaetgnrlsfv</p>
 
