@@ -401,15 +401,6 @@ main {
   display: flex;
   padding-left: 10vw;
 }
-.img-container-storage {
-  height: 80vh;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-}
-.img-container-storage img {
-  width: 98vw;
-}
 
 .col-icon img {
   align-self: center;
@@ -432,19 +423,24 @@ main {
   color: white;
   cursor: pointer;
 }
-
+#aboutStorage {
+  background-image: url("../img/big_sunset_vidar-nordli-mathisen-omTL6AQQL4M-unsplash.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60rem;
+  overflow: hidden;
+  padding-top: 20rem;
+}
 .background-black {
   background-color: black;
 }
 
 .background-black .col-text p {
   color: white;
+  padding-right: 4rem;
 }
-.background-black .col-text,
-.background-black .col-icon {
-  position: relative;
-  top: -12rem;
-}
+
 #text-generated {
   width: 40vw;
 }
@@ -466,7 +462,7 @@ main {
   display: flex;
   justify-content: center;
 }
-
+/* Media query for 1024px*/
 @media (max-width: 64em) {
   .row {
     display: flex;
@@ -496,6 +492,12 @@ main {
     margin: 0;
     padding: 0;
   }
+  #aboutStorage {
+    height: 80rem;
+  }
+  .background-black .col-text p {
+    padding-right: 0;
+  }
   #text-generated {
     width: 100%;
   }
@@ -510,9 +512,24 @@ main {
     padding-left: 0;
   }
 }
+/* Media query for 800px*/
 @media (max-width: 50em) {
   #combination-icon-generated {
     width: 17.5rem;
+  }
+  #aboutStorage {
+    padding-top: 15rem;
+    background-image: url("../img/small_sunset_vidar-nordli-mathisen-omTL6AQQL4M-unsplash.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+/* Media query for 512px */
+@media (max-width: 32em) {
+  #aboutStorage {
+    padding-top: 7rem;
+    height: 95rem;
   }
 }
 /*--- End styles for startpage ------------------------------------- */
