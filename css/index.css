@@ -1,6 +1,6 @@
 
 div{
-  // border: solid 3px gray;
+   //border: solid 3px gray;
 }
 
 * {
@@ -403,6 +403,15 @@ main {
   align-self: center;
   width: 12.5rem;
 }
+
+#h2-icon {
+  padding-bottom: 30vh;
+}
+
+#storage-text {
+  max-width: 980px;
+}
+
 .read-more-button {
   color: black;
   font-size: 1.4rem;
@@ -516,6 +525,9 @@ main {
   }
   #img-container-techniques {
     padding: 3rem 0;
+}
+  #h2-icon {
+    padding-bottom: 5vh;
   }
 }
 /* Media query for 800px*/
