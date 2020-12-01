@@ -1,49 +1,4 @@
 
-/*
-
------ Resources used -----------------------------------
-
-Texteditor:
-  Atom - https://atom.io/
-  Webstorm - https://www.jetbrains.com/webstorm/
-
-Version control:
-  Github - https://github.com/
-
-Html, css and javascript:
-  https://www.w3schools.com/
-  https://developer.mozilla.org/
-  Hover effect links: https://webdevtrick.com/css-link-hover-effects/
-  JS for mobile menu: https://www.youtube.com/watch?v=gXkqy0b4M5g
-
-Accessibility:
-  https://a11y-101.com/
-  https://uu.difi.no/krav-og-regelverk/losningsforslag-web
-
-Automated html checker:
-  Tingtung checker - http://checkers.eiii.eu/
-  Lighthouse from chrome developer tool
-  W3C markup validation - https://validator.w3.org/
-
------ Text ------------------------------------
-
-Sources:
-
-  Sullivan, K.D. (2020. 09. September). Photovoltaic paint has endless potential. LabRoots.
-  https://www.labroots.com/trending/chemistry-and-physics/18633/photovoltaic-paint-endless-potential
-
-  Zyga. L. (2016, 21. November). Thermoelectric paint enables walls to convert heat into electricity. Phys org.
-  https://phys.org/news/2016-11-thermoelectric-enables-walls-electricity.html
-
-Images:
-  Photo credit: https://unsplash.com/@vidarnm
-  Graphics licensed and modified from : https://www.flaticon.com/
-
-
-*/
-
-
-
 div{
   // border: solid 3px gray;
 }
@@ -243,7 +198,7 @@ a:before, a:after, a > span:before, a > span:after {
 
 .menu-text {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 700;
   color: white;
   text-transform: uppercase;
   padding-right: 5px;
@@ -267,6 +222,7 @@ a:before, a:after, a > span:before, a > span:after {
   body {
     overflow-x: hidden;
   }
+
 
   .header-box {
     flex-direction: column;
@@ -1448,4 +1404,10 @@ footer {
   width: 80px;
   height: 80px;
   cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+  .top-arrow-container {
+    display: none;
+  }
 }
