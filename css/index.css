@@ -514,6 +514,9 @@ main {
     width: 100%;
     padding-left: 0;
   }
+  #img-container-techniques {
+    padding: 3rem 0;
+  }
 }
 /* Media query for 800px*/
 @media (max-width: 50em) {
