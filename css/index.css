@@ -1279,6 +1279,7 @@ input[type=text], textarea::-webkit-input-placeholder {
 footer {
   padding: 2rem;
   background-color: rgba(240, 240, 240, 1);
+  position: relative;
 }
 
 #footer-margin {
@@ -1360,4 +1361,28 @@ footer {
   .footer-container-list {
     font-size: 0.8rem;
   }
+}
+
+.top-arrow-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 10%;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.top-arrow-container img {
+  width: 70px;
+  height: 70px;
+  transition: 0.2s ease;
+}
+
+.top-arrow-container img:hover {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
 }
