@@ -1425,8 +1425,7 @@ footer {
   height: 100%;
   width: 10%;
   bottom: 0;
-  right: 50%;
-  transform: translateX(50%);
+  right: 0;
 }
 
 .top-arrow-container img {
