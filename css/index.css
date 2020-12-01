@@ -10,9 +10,11 @@ Texteditor:
 Version control:
   Github - https://github.com/
 
-Html and css:
+Html, css and javascript:
   https://www.w3schools.com/
   https://developer.mozilla.org/
+  Hover effect links: https://webdevtrick.com/css-link-hover-effects/
+  JS for mobile menu: https://www.youtube.com/watch?v=gXkqy0b4M5g
 
 Accessibility:
   https://a11y-101.com/
@@ -27,13 +29,15 @@ Automated html checker:
 
 Sources:
 
-Sullivan, K.D. (2020. 09. September). Photovoltaic paint has endless potential. LabRoots.
-https://www.labroots.com/trending/chemistry-and-physics/18633/photovoltaic-paint-endless-potential
+  Sullivan, K.D. (2020. 09. September). Photovoltaic paint has endless potential. LabRoots.
+  https://www.labroots.com/trending/chemistry-and-physics/18633/photovoltaic-paint-endless-potential
 
-Zyga. L. (2016, 21. November). Thermoelectric paint enables walls to convert heat into electricity. Phys org.
-https://phys.org/news/2016-11-thermoelectric-enables-walls-electricity.html
+  Zyga. L. (2016, 21. November). Thermoelectric paint enables walls to convert heat into electricity. Phys org.
+  https://phys.org/news/2016-11-thermoelectric-enables-walls-electricity.html
 
 Images:
+  Photo credit: https://unsplash.com/@vidarnm
+  Graphics licensed and modified from : https://www.flaticon.com/
 
 
 */
@@ -462,7 +466,7 @@ main {
 }
 #aboutStorage {
   background-image: url("../img/big_sunset_vidar-nordli-mathisen-omTL6AQQL4M-unsplash.jpg");
-  background-position: top;
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
   height: 72rem;
@@ -498,6 +502,12 @@ main {
 .comination-icon-picture {
   display: flex;
   justify-content: center;
+}
+/* Media query for 1550px*/
+@media (min-width: 96.875em) {
+  #combination-icon-techniques {
+    width: calc(35% - 4vw);
+  }
 }
 /* Media query for 1024px*/
 @media (max-width: 64em) {
