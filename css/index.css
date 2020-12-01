@@ -198,7 +198,7 @@ a:before, a:after, a > span:before, a > span:after {
 
 .menu-text {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 700;
   color: white;
   text-transform: uppercase;
   padding-right: 5px;
@@ -222,6 +222,7 @@ a:before, a:after, a > span:before, a > span:after {
   body {
     overflow-x: hidden;
   }
+
 
   .header-box {
     flex-direction: column;
@@ -1397,4 +1398,10 @@ footer {
   width: 80px;
   height: 80px;
   cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+  .top-arrow-container {
+    display: none;
+  }
 }
