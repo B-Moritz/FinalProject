@@ -383,7 +383,7 @@ main {
 }
 
 .row {
-  padding: 4rem 10vw 4rem;
+  padding: 4rem 10vw 0;
   display: flex;
   flex-direction: row;
 }
@@ -476,7 +476,6 @@ main {
 
 @media (max-width: 64em) {
   .row {
-    padding: 6rem 15vw 3rem;
     display: flex;
     flex-direction: column;
   }
@@ -490,7 +489,7 @@ main {
   }
   .col-text {
     order: 2;
-    padding: 2rem 0;
+    padding: 0 0;
     width: 100%;
     text-align: left;
   }
@@ -1132,7 +1131,7 @@ input[id*="layer"]:checked + label {
   display: block;
   width: 80%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 10vh 0;
 }
 
 .contact-section h2 {
@@ -1207,7 +1206,7 @@ input[type=text], textarea::-webkit-input-placeholder {
 }
 
 .text-section {
-  padding: 0rem 0 4rem 0;
+  padding: 0 0 6rem 0;
 }
 
 
