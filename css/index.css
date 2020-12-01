@@ -422,7 +422,7 @@ main {
 }
 #aboutStorage {
   background-image: url("../img/big_sunset_vidar-nordli-mathisen-omTL6AQQL4M-unsplash.jpg");
-  background-position: top left;
+  background-position: initial;
   background-repeat: no-repeat;
   background-size: contain;
   height: 72rem;
