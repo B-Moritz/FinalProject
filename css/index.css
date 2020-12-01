@@ -1,5 +1,33 @@
 
+/*
+This webpage
 
+Resources used for this webpage:
+
+Texteditor:
+  Atom - https://atom.io/
+  Webstorm - https://www.jetbrains.com/webstorm/
+
+Version control:
+  Github - https://github.com/
+
+Html and css:
+  https://www.w3schools.com/
+  https://developer.mozilla.org/
+
+Accessibility:
+  https://a11y-101.com/
+  https://uu.difi.no/krav-og-regelverk/losningsforslag-web
+
+Automated html checker:
+  Tingtung checker - http://checkers.eiii.eu/
+  Lighthouse from chrome developer tool
+  W3C markup validation - https://validator.w3.org/
+
+Text content:
+Sources:
+
+*/
 
 
 
@@ -438,7 +466,7 @@ main {
 
 .background-black .col-text p {
   color: white;
-  padding-right: 4rem;
+  padding-right: 12rem;
 }
 
 #text-generated {
